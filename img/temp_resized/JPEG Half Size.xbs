@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><XnView_script version="1.0" name="JPEG Half Size">
     <Resize mode="0" width="50" height="50" unit="1" ratio="true" orientation="false" enlarge="0" resample="7" gamma_correct="false"/>
-    <Output folder="/Users/benjammintrain/Desktop/Benz Stuff/Programmin/Portfolio/portfolio/img/temp_resized" filename="{Filename}_resized" case="0" startIndex="1" format="JPEG">
+    <Output folder="/Users/benjammintrain/Desktop/Benz Stuff/Freelance/bentrainor.com/ben-trainor-com/img/temp_resized" filename="{Filename}_resized" case="0" startIndex="1" format="JPEG">
         <Options overwrite="0" orgDate="false" keepMeta="true" keepICC="false" keepFolder="false" keepParentFolder="false" keepExtension="false" delOrg="false" multipage="false" allPages="false" openExplorer="false" openBrowser="false" clearItems="false"/>
         <JPEG quality="47" progressive="false" optimizeHuffman="false" rebuildThumb="true" orgQuality="false" DCTMethod="0" subSampling="0" smoothFactor="0"/>
     </Output>
