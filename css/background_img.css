@@ -9,12 +9,12 @@
     max-height: 600px;
 }
 
-.home-article > div > h4 {
+.home-article > div > .home-article-list-animated {
     opacity: 0%;
     transform: translateY(100px);
     transition-duration: .3s;
 }
-.home-article:hover > div > h4 {
+.home-article:hover > div > .home-article-list-animated {
     transform: translateY(0px);
     opacity: 100%;
 }
