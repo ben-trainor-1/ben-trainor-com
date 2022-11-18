@@ -47,9 +47,13 @@
 
 
 /* Visual */
-
 #visual_titleArticle {
     background-image: url('../img/nature/white_shaded_resized.jpg');
+}
+
+/* Visual */
+#sound_titleArticle {
+    background-image: url('../img/nature/duck_in_water_resized.webp');
 }
 
 
