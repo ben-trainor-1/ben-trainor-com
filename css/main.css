@@ -120,6 +120,15 @@
         color: #b4b4b4;
         text-decoration: none;
     }
+    .link-light, .link-light:visited {
+        transition-duration: .2s;
+        color: #fafafa;
+        text-decoration: none;
+    }
+    .link-light:hover, .link-light:active {
+        color: #b4b4b4;
+        text-decoration: none;
+    }
 
     .link-dark {
         text-decoration: none;
@@ -248,13 +257,14 @@
     }
     .music-section img, .music-section .img-fluid, .album-cover-container img {
         max-height: 100%;
+
     }
     @media only screen and (max-width: 767px) {
         .music-section {
             max-height: 200px;
         }
         .album-cover-container {
-            max-height: 400px;
+            max-height: 600px;
         }
     }
 
@@ -263,6 +273,21 @@
     } */
     .album-description {
         list-style-type: none;
+    }
+
+    .album-title {
+        opacity: 0;
+        transition-duration: .3s;
+        z-index: 100;
+    }
+    .album-container:hover > .album-title {
+        opacity: 100;
+    }
+    .album-container > .img-fluid {
+        transition-duration: .3s;
+    }
+    .album-container:hover > .img-fluid {
+        filter: brightness(.5) blur(1px);
     }
     
 
