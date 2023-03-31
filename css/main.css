@@ -271,6 +271,9 @@
     /* .album-title {
         min-height: 90px;
     } */
+    .album-container {
+        position: relative;
+    }
     .album-description {
         list-style-type: none;
     }
@@ -279,15 +282,18 @@
         opacity: 0;
         transition-duration: .3s;
         z-index: 100;
+        left: 25%;
     }
     .album-container:hover > .album-title {
         opacity: 100;
+        left: 1%;
     }
     .album-container > .img-fluid {
         transition-duration: .3s;
     }
     .album-container:hover > .img-fluid {
         filter: brightness(.5) blur(1px);
+        padding: 5px;
     }
     
 
