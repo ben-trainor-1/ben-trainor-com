@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root {
+    --transition_short: .2s;
+    --transition_medium: .3s;
+    --transition_long: .4s;
+}
 
 /* Testing borders */
 
@@ -36,7 +41,7 @@
     button.submit-button {
         font-weight: bold;
         background-color: black;
-        transition: .2s;
+        transition-duration: .2s;
         box-shadow: none;
         border: 1px solid grey;
     }
@@ -283,6 +288,9 @@
         transition-duration: .3s;
         z-index: 100;
         left: 25%;
+    }
+    .album-title > li {
+        left: 100%;
     }
     .album-container:hover > .album-title {
         opacity: 100;
