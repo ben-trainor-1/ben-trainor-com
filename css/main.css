@@ -72,6 +72,11 @@
 
     /* Links */
 
+    /* Menu icon */
+    .menu-icon {
+        max-height: 65px;
+    }
+
     /* Blue links */
     .link-primary, .link-primary:visited,
     .navbar-nav > .nav-item > .link-primary, .navbar-nav > .nav-item > .link-primary:visited,
