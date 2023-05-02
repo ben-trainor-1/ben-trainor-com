@@ -254,19 +254,29 @@
 
     /* Contact form */
 
+    .form-required {
+        color: rgb(220, 0, 0);
+    }
+
     #modal_contact {
         margin-top: 1vh;
         margin-bottom: 0px;
     }
     /* Modal contact popup */
     #iframe_contact {
-        height: 83vh;
+        height: 67vh;
     }
     /* Embedded contact page form */
     #iframe_contact_full {
-        height: 810px;
+        height: 630px;
         width: 100%;
-        margin-top: 20px;
+        margin-top: 0px;
+    }
+
+    @media only screen and (max-width: 991px) {
+        #iframe_contact {
+            height: 80vh;
+        }
     }
 
     @media only screen and (max-width: 480px) {
