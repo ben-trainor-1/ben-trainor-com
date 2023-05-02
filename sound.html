@@ -27,6 +27,11 @@
 
     <!-- NOTE: This changes how many columns each photo takes up -->
     <script src="js/photos.js" async type="text/javascript"></script>
+    
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+        crossorigin="anonymous"></script>
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -116,11 +121,10 @@
         </div> -->
 
     <!-- Bio images section -->
-    <div class="container-fluid row bg-darker text-dark m-0 py-md-5 p-0">
+    <!-- <div class="container-fluid row bg-darker text-dark m-0 py-md-5 p-0">
 
         <div class="col-xl-2 col-md-1 m-0 p-0"></div>
-        
-        <!-- Content -->
+    
         <div class="col-xl-8 col-md-10 row m-0 p-0">
             
             <article id="sound_titleArticle" class="row home-article m-0 p-0">
@@ -129,7 +133,7 @@
                     <h3 class="fw-bold fst-italic m-0 p-0 pb-2">Audio Engineering</h3>
                     <h4 class="m-0 p-0 pb-3">
                         My technical skill set lies both in the studio and a live setting. I thoroughly enjoy the recording, editing, 
-                        mixing, and mastering tracks in a variety of styles, but I also love the thrill of live performances.
+                        mixing, and mastering tracks in a variety of styles, but I also love the constraints of live performances.
                     </h4>
                     <h3 class="fw-bold fst-italic m-0 p-0 pb-2">Sound Design</h3>
                     <h4 class="m-0 p-0 pb-3">
@@ -142,64 +146,227 @@
             
         </div>
         
-    </div>
+    </div> -->
     
-    <!-- Main Portfolio -->
-    <div class="container-fluid row bg-light text-dark m-0 p-0 pb-md-5">
+    <!-- Main Page -->
+    <div class="container-fluid row bg-light text-dark m-0 p-0">
         
         <div class="col-xl-2 col-md-1 m-0 p-0"></div>
         
         <div class="col-xl-8 col-md-10 row m-0 p-0 p-md-0 px-5">
+            
+            <!-- Title -->
+            <div class="row m-0 p-0 py-md-5 py-4">
+                
+                <h1 class="fs-1 text-center fw-bold m-0 p-md-0 px-4">Origami Studios</h1>
+                <div class="text-center m-0 mt-lg-0 mt-2 p-0 ps-md-2">
+                    <p class="fs-5 m-0 p-md-0 px-4">Recording, tracking, arranging, mixing, and mastering</p>
+                    <p class="fst-italic fs-6 m-0 p-md-0 px-4">See chart below for pricing</p>
+                </div>
+                
+            </div>
+            
+        </div>
         
+    </div>
+
+    <div class="container-fluid row bg-darker text-light m-0 p-0 pt-md-4 pt-2 pb-md-5 pb-3 px-0">
+        
+        <div class="col-xl-2 col-md-1 m-0 p-0"></div>
+        
+        <div class="col-xl-8 col-md-10 row m-0 p-0 py-md-5 py-3">
+            
+            <!-- Pricing -->
+            <div class="col-md-6 m-0 p-0 px-md-0 px-3 pe-md-2 pb-md-0 pb-3">
+
+                <!-- Mixing/mastering -->
+                <h3 class="fst-italic serif fw-bold text-center fs-1 m-0 mb-3 text-shadow p-0 py-md-0 py-3">post production</h3>
+
+                <table class="table table-dark text-center table-borderless m-0 p-0 mb-3">
+                    <tbody class="col-6 m-0 p-0">
+                        <!-- Mixing -->
+                        <tr class="fs-3 fst-italic fw-bold border-bottom m-0 p-4">
+                            <td class="text-shadow m-0 p-3" colspan="2">Mixing</td>
+                        </tr>
+                        <tr class="fs-5 m-0 p-4">
+                            <td class="w-50 text-end m-0 p-3 pe-2">Single</td>
+                            <td class="w-50 text-start m-0 p-3 ps-2">$150</td>
+                        </tr>
+                        <tr class="fs-5 m-0 p-4">
+                            <td class="w-50 text-end m-0 p-3 pe-2">EP (2-5)</td>
+                            <td class="w-50 text-start m-0 p-3 ps-2">$125/track</td>
+                        </tr>
+                        <tr class="fs-5 m-0 p-4">
+                            <td class="w-50 text-end m-0 p-3 pe-2">Album (6+)</td>
+                            <td class="w-50 text-start m-0 p-3 ps-2">$110/track</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table table-dark text-center table-borderless m-0 p-0">
+                    <tbody class="col-6 m-0 p-0">
+                        <!-- Mastering -->
+                        <tr class="fs-3 fst-italic fw-bold border-bottom m-0 p-4 pt-0">
+                            <td class="text-shadow m-0 p-3" colspan="2">Mastering</td>
+                        </tr>
+                        <tr class="fs-5 m-0 p-4">
+                            <td class="w-50 text-end m-0 p-3 pe-2">Single</td>
+                            <td class="w-50 text-start m-0 p-3 ps-2">$100</td>
+                        </tr>
+                        <tr class="fs-5 m-0 p-4">
+                            <td class="w-50 text-end m-0 p-3 pe-2">EP (2-5)</td>
+                            <td class="w-50 text-start m-0 p-3 ps-2">$75/track</td>
+                        </tr>
+                        <tr class="fs-5 m-0 p-4">
+                            <td class="w-50 text-end m-0 p-3 pe-2">Album (6+)</td>
+                            <td class="w-50 text-start m-0 p-3 ps-2">$65/track</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="col-md-6 m-0 p-0 px-md-0 px-3 ps-md-2 pb-md-0 pb-3">
+
+                <!-- Mixing/mastering -->
+                <h3 class="fst-italic serif fw-bold text-center fs-1 m-0 mb-3 text-shadow p-0 py-md-0 py-3">studio work</h3>
+                <table class="table table-dark text-center table-borderless m-0 p-0 mb-3">
+                    <tbody class="col-6 m-0 p-0">
+                        <!-- Sessions -->
+                        <tr class="fs-3 fst-italic fw-bold border-bottom m-0 p-4 pt-0">
+                            <td class="m-0 p-3" colspan="2">Studio sessions</td>
+                        </tr>
+                        <tr class="fs-5 m-0 p-4">
+                            <td class="w-50 text-end m-0 p-3 pe-2">1 day</td>
+                            <td class="w-50 text-start m-0 p-3 ps-2">$100/day</td>
+                        </tr>
+                        <tr class="fs-5 m-0 p-4">
+                            <td class="w-50 text-end m-0 p-3 pe-2">2 days</td>
+                            <td class="w-50 text-start m-0 p-3 ps-2">$75/day</td>
+                        </tr>
+                        <tr class="fs-5 m-0 p-4">
+                            <td class="w-50 text-end m-0 p-3 pe-2">3 days</td>
+                            <td class="w-50 text-start m-0 p-3 ps-2">$65/day</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table table-dark text-center table-borderless m-0 p-0 mb-3">
+                    <tbody class="col-6 m-0 p-0">
+                        <!-- Mixing -->
+                        <tr class="fs-3 fst-italic fw-bold border-bottom m-0 p-4">
+                            <td class="m-0 p-3" colspan="2">Other</td>
+                        </tr>
+                        <tr class="fs-5 m-0 p-4">
+                            <td class="w-50 text-end m-0 p-3 pe-2 ps-2">Arranging</td>
+                            <td class="w-50 text-start fst-italic m-0 p-3 ps-2">Prices vary</td>
+                        </tr>
+                        <tr class="fs-5 m-0 p-4">
+                            <td class="w-50 text-end m-0 p-3 pe-2">Guitar tracking</td>
+                            <td class="w-50 text-start fst-italic m-0 p-3 ps-2">Prices vary</td>
+                        </tr>
+                        <tr class="fs-5 m-0 p-4">
+                            <td class="w-50 text-center m-0 p-3 text-dark" colspan="2">N/A</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="container-fluid row bg-light text-dark m-0 p-0 pb-md-5">
+        
+        <div class="col-xl-2 col-md-1 m-0 p-0"></div>
+        
+        <div class="col-xl-8 col-md-10 row m-0 p-0 p-md-0 px-3">
+            
+            <!-- Gigs -->
             <div class="row m-0 p-0 py-md-5 py-4">
 
-                <h1 class="fw-bold m-0 p-0">Recent gigs</h1>
+                <h1 class="fs-1 text-center fw-bold m-0 p-md-0 px-4">Live audio engineering</h1>
+                <div class="text-center m-0 mt-lg-0 mt-2 p-0 ps-md-2 mb-3">
+                    <p class="fs-5 m-0 p-md-0 px-4">Contract work for concerts, camps, events, etc.</p>
+                    <p class="fst-italic fs-6 m-0 p-md-0 px-4"><a href="contact.html" class="link-secondary-dark">Contact for availability</a></p>
+                </div>
+                    
 
                 <div class="row m-0 mt-3 p-0">
                     <table class="table table-striped m-0 p-0">
+                        
                         <thead class="fw-bold fs-3 m-0 p-0">
-                            <td class="ps-2 pe-3 pb-2">Role</td>
-                            <td class="ps-2 pe-3 pb-2">Event</td>
-                            <td class="ps-2 pe-3 d-lg-table-cell d-none pb-2">Date</td>
-                            <td class="ps-2 pe-3 pb-2">Client</td>
-                            <td class="ps-2 d-lg-table-cell d-none pb-2">Location</td>
+                            <th class="vertically-align ps-2 pe-3 pb-2">Role</th>
+                            <th class="vertically-align ps-2 pe-3 pb-2">Event</th>
+                            <th class="vertically-align ps-2 pe-3 d-lg-table-cell d-none pb-2">Date</th>
+                            <th class="vertically-align ps-2 pe-3 pb-2">Client</th>
+                            <th class="vertically-align ps-2 d-lg-table-cell d-none pb-2">Location</th>
                         </thead>
                         <tr class="d-table-row m-0 p-0">
-                            <td class="ps-2 pe-3 py-2">Audio engineer</td>
-                            <td class="ps-2 pe-3 py-2">Hub City Weekend</td>
-                            <td class="ps-2 pe-3 d-lg-table-cell d-none py-2">11.18.22-11.21.22</td>
-                            <td class="ps-2 pe-3 py-2">West Jackson Baptist Church</td>
-                            <td class="ps-2 d-lg-table-cell d-none py-2">Jackson, TN</td>
+                            <td class="vertically-align ps-2 pe-3 py-2">Event operations tech</td>
+                            <td class="vertically-align ps-2 pe-3 py-2">Spring Soirée</td>
+                            <td class="vertically-align ps-2 pe-3 d-lg-table-cell d-none py-2">4.22.23</td>
+                            <td class="vertically-align ps-2 pe-3 py-2">Augustine School</td>
+                            <td class="vertically-align ps-2 d-lg-table-cell d-none py-2">Madison Downs Venue</td>
                         </tr>
                         <tr class="d-table-row m-0 p-0">
-                            <td class="ps-2 pe-3 py-2">Audio engineer</td>
-                            <td class="ps-2 pe-3 py-2">Let It Glow Kickoff Event</td>
-                            <td class="ps-2 pe-3 d-lg-table-cell d-none py-2">11.11.22</td>
-                            <td class="ps-2 pe-3 py-2">The Jackson Symphony</td>
-                            <td class="ps-2 d-lg-table-cell d-none py-2">Union City, TN</td>
+                            <td class="vertically-align ps-2 pe-3 py-2">Audio engineer</td>
+                            <td class="vertically-align ps-2 pe-3 py-2">West J WKND</td>
+                            <td class="vertically-align ps-2 pe-3 d-lg-table-cell d-none py-2">2.24.23-2.26.23</td>
+                            <td class="vertically-align ps-2 pe-3 py-2">West Jackson Baptist Church</td>
+                            <td class="vertically-align ps-2 d-lg-table-cell d-none py-2">Camp Linden</td>
                         </tr>
                         <tr class="d-table-row m-0 p-0">
-                            <td class="ps-2 pe-3 py-2">Audio engineer, sound designer</td>
-                            <td class="ps-2 pe-3 py-2">Sweeney Todd</td>
-                            <td class="ps-2 pe-3 d-lg-table-cell d-none py-2">10.22.22-10.31.22</td>
-                            <td class="ps-2 pe-3 py-2">Ned Performing Arts Center</td>
-                            <td class="ps-2 d-lg-table-cell d-none py-2">Jackson, TN</td>
+                            <td class="vertically-align ps-2 pe-3 py-2">Audio engineer</td>
+                            <td class="vertically-align ps-2 pe-3 py-2">Christ Has Come Christmas Concert</td>
+                            <td class="vertically-align ps-2 pe-3 d-lg-table-cell d-none py-2">12.11.22</td>
+                            <td class="vertically-align ps-2 pe-3 py-2">First Baptist Church</td>
+                            <td class="vertically-align ps-2 d-lg-table-cell d-none py-2">Jackson, TN</td>
+                        </tr>
+                        <tr class="d-table-row m-0 p-0">
+                            <td class="vertically-align ps-2 pe-3 py-2">Audio engineer</td>
+                            <td class="vertically-align ps-2 pe-3 py-2">Symphony on the Move</td>
+                            <td class="vertically-align ps-2 pe-3 d-lg-table-cell d-none py-2">11.29.22</td>
+                            <td class="vertically-align ps-2 pe-3 py-2">The Jackson Symphony</td>
+                            <td class="vertically-align ps-2 d-lg-table-cell d-none py-2">Jackson Country Club</td>
+                        </tr>
+                        <tr class="d-table-row m-0 p-0">
+                            <td class="vertically-align ps-2 pe-3 py-2">Audio engineer</td>
+                            <td class="vertically-align ps-2 pe-3 py-2">Hub City Weekend</td>
+                            <td class="vertically-align ps-2 pe-3 d-lg-table-cell d-none py-2">11.18.22-11.21.22</td>
+                            <td class="vertically-align ps-2 pe-3 py-2">West Jackson Baptist Church</td>
+                            <td class="vertically-align ps-2 d-lg-table-cell d-none py-2">Jackson, TN</td>
+                        </tr>
+                        <tr class="d-table-row m-0 p-0">
+                            <td class="vertically-align ps-2 pe-3 py-2">Audio engineer</td>
+                            <td class="vertically-align ps-2 pe-3 py-2">Let It Glow Kickoff Event</td>
+                            <td class="vertically-align ps-2 pe-3 d-lg-table-cell d-none py-2">11.11.22</td>
+                            <td class="vertically-align ps-2 pe-3 py-2">The Jackson Symphony</td>
+                            <td class="vertically-align ps-2 d-lg-table-cell d-none py-2">Union City, TN</td>
+                        </tr>
+                        <tr class="d-table-row m-0 p-0">
+                            <td class="vertically-align ps-2 pe-3 py-2">Audio engineer, sound designer</td>
+                            <td class="vertically-align ps-2 pe-3 py-2">Sweeney Todd</td>
+                            <td class="vertically-align ps-2 pe-3 d-lg-table-cell d-none py-2">10.22.22-10.31.22</td>
+                            <td class="vertically-align ps-2 pe-3 py-2">Ned Performing Arts Center</td>
+                            <td class="vertically-align ps-2 d-lg-table-cell d-none py-2">Jackson, TN</td>
                         </tr>
 
                         <tr class="d-table-row m-0 p-0">
-                            <td class="pe-3 py-2">Audio engineer</td>
-                            <td class="pe-3 py-2">Union FUGE 2022</td>
-                            <td class="pe-3 d-lg-table-cell d-none py-2">06.06.22-07.23.22</td>
-                            <td class="pe-3 py-2">FUGE Camps</td>
-                            <td class="d-lg-table-cell d-none py-2">Jackson, TN</td>
+                            <td class="vertically-align pe-3 py-2">Audio engineer</td>
+                            <td class="vertically-align pe-3 py-2">Union FUGE 2022</td>
+                            <td class="vertically-align pe-3 d-lg-table-cell d-none py-2">06.06.22-07.23.22</td>
+                            <td class="vertically-align pe-3 py-2">FUGE Camps</td>
+                            <td class="vertically-align d-lg-table-cell d-none py-2">Jackson, TN</td>
                         </tr>
 
                         <!-- <tr class="d-table-row m-0 p-0">
-                            <td class="pe-3 py-2"></td>
-                            <td class="pe-3 py-2"></td>
-                            <td class="pe-3 d-lg-table-cell d-none py-2"></td>
-                            <td class="pe-3 py-2"></td>
-                            <td class="d-lg-table-cell d-none py-2"></td>
+                            <td class="vertically-align pe-3 py-2"></td>
+                            <td class="vertically-align pe-3 py-2"></td>
+                            <td class="vertically-align pe-3 d-lg-table-cell d-none py-2"></td>
+                            <td class="vertically-align pe-3 py-2"></td>
+                            <td class="vertically-align d-lg-table-cell d-none py-2"></td>
                         </tr> -->
 
                     </table>
@@ -210,7 +377,7 @@
             
             <div class="row d-none m-0 p-0 py-md-5 py-4">
 
-                <h1 class="fw-bold m-0 p-0">Positions held</h1>
+                <h2 class="fs-1 fw-bold m-0 p-0">Positions held</h2>
 
                 <div class="row m-0 mt-3 p-0">
                     <table class="table table-striped m-0 p-0">

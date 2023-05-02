@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,700;1,400;1,700&family=Source+Serif+Pro:wght@400;700;900&display=swap');
 :root {
     --transition_short: .2s;
     --transition_medium: .3s;
@@ -23,7 +24,16 @@
     /* Main fonts and colors */
     
     html, body, div, p, button {
-        font-family: "Raleway", "Open Sans", "Helvetica";
+        font-family: "DM Sans", "Open Sans", "Helvetica";
+    }
+    h1, h2 {
+        font-family: "Source Serif Pro", "Times New Roman", "serif";
+    }
+    .serif {
+        font-family: "Source Serif Pro", "Times New Roman", "serif";
+    }
+    .sans-serif {
+        font-family: "DM Sans", "Open Sans", "Helvetica";
     }
 
     .text-light {
@@ -67,6 +77,12 @@
     }
     .bg-darker {
         background-color: #18181a;
+    }
+
+
+    /* Centered text */
+    .vertically-align {
+        vertical-align: middle;
     }
 
 
@@ -308,6 +324,15 @@
         filter: brightness(.5) blur(1px);
         padding: 5px;
     }
+
+    /* Rounded corners */
+    .round-5 {
+        border-radius: 5px;
+    }
+    .round-10 {
+        border-radius: 10px;
+    }
+    
     
 
 /* Backgrounds */
