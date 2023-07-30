@@ -41,6 +41,10 @@
         <!-- JQuery -->
         <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 
+        <!-- Audio player -->
+        <link rel="stylesheet" href="Clean-Audio-Player-jQuery/css/audioplayer.css" />
+        <script src="Clean-Audio-Player-jQuery/js/audioplayer.js"></script>
+
     </head>
 
     <body class="bg-dark m-0 p-0">
@@ -48,7 +52,7 @@
         <div id="header" class="m-0 p-0"></div>
 
         <!-- Specific sections of page -->
-        <div class="container-fluid row bg-light text-dark m-0 p-0">
+        <div class="container-fluid d-none row bg-light text-dark m-0 p-0">
 
             <!-- Paper Watch bio -->
             <div class="row m-0 p-0">
@@ -63,6 +67,8 @@
                     </div>
 
                 </div>
+
+            </div>
 
             <!-- Paper Watch albums -->
             <div class="row bg-darker m-0 p-4">
@@ -199,6 +205,42 @@
 
         </div>
         
+        <!-- REDESIGN -->
+        <div class="container-fluid row bg-light text-dark m-0 p-0">
+
+            <!-- Paper Watch bio -->
+            <div class="row m-0 p-0">
+
+                <!-- Content -->
+                <div class="row m-0 p-0 py-md-5 py-4 justify-content-center">
+
+                    <img src="img/paper_watch/paperwatch_logo_black.png" alt="" class="img-fluid mb-2" style="max-height: 100px; width: auto;">
+                    <div class="text-center m-0 mt-lg-0 mt-2 p-0 ps-md-2">
+                        <p class="fs-5 m-0 p-md-0 px-4">Original music</p>
+                        <p class="fst-italic fs-6 m-0 p-md-0 px-4">Links to streaming platforms below</p>
+                    </div>
+
+                </div>
+                
+            </div>
+
+
+            <div class="row bg-darker m-0 p-4 justify-content-center">
+
+                <div class="row col-xl-6 col-lg-7 col-sm-10 m-0 p-0">
+
+
+                    <audio src="audio/COMC_Act_I.mp3" preload="auto" controls></audio>
+                    <audio src="audio/COMC_Act_I.mp3" preload="auto" controls></audio>
+                    <audio src="audio/COMC_Act_I.mp3" preload="auto" controls></audio>
+
+                </div>
+
+            </div>
+
+            
+        </div>
+        
 
         <div id="contact_form" class="m-0 p-0"></div>
         
@@ -209,6 +251,9 @@
         <!-- Bootstrap JavaScript Libraries -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        
+        <script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
+
     </body>
 
 </html>
