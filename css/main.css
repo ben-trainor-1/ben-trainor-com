@@ -44,6 +44,10 @@
         color: #222222;
     }
 
+    .fs-55 {
+        font-size: 1.15rem !important;
+    }
+
     .header-text > h1 {
         font-size: 60px;
     }
