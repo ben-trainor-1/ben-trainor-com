@@ -18,8 +18,8 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Main stylesheets -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/background_img.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/background_img.css">
 
     <script src="js/photos.js" async type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
@@ -30,7 +30,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
-
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 
 </head>
 
@@ -38,8 +39,6 @@
 
     
     <div id="header" class="m-0 p-0"></div>
-    <script src="js/header.js" type="text/javascript"></script>
-    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 
     <!-- Bio images section -->
     <div class="container-fluid row bg-darker text-dark m-0 pt-md-5 pb-md-3 p-0">
@@ -78,7 +77,7 @@
         <div class="row m-0 p-md-0 p-3 pt-0">
             <div class="col-xl-3 col-lg-2 col-md-1 m-0 p-0"></div>
             <div class="col-xl-6 col-lg-8 col-md-10 bg-white shadow m-0 p-md-0 p-2 p-0 border round-10">
-                <iframe id="iframe_contact_full" class="m-0 p-0 round-10" src="contact_form.html" frameborder="0"></iframe>
+                <iframe id="iframe_contact_full" class="m-0 p-0 round-10" src="../elements/contact_form.html" frameborder="0"></iframe>
             </div>
         </div>
 
@@ -86,27 +85,11 @@
     </div>
 
 
-    <footer class="row bg-darker m-0 p-0 px-3 py-md-5 py-4">
-        <div class="col-xl-2 col-md-1 m-0 p-0"></div>
-        <div class="row col-xl-8 col-md-10 text-light m-0 p-0">
-            <div class="col-3 m-0 p-0"></div>
-            <div class="col-2 text-center m-0 p-0">
-                <a class="text-center m-0 p-0" href="https://instagram.com/benjammintrain">
-                    <img class="social-icon m-0 p-0" src="img/social/iconmonstr-instagram-4.svg" alt="Ben Trainor - Instagram">
-                </a>
-            </div>
-            <div class="col-2 text-center m-0 p-0">
-                <a class="text-center m-0 p-0" href="https://open.spotify.com/artist/1BD8tdMfutOoshPyrhvy59?si=PxngBkGOTFmQ_gEGqk3q9A">
-                    <img class="social-icon m-0 p-0" src="img/social/iconmonstr-spotify-4.svg" alt="Paper Watch">
-                </a>
-            </div>
-            <div class="col-2 text-center m-0 p-0">
-                <a class="text-center m-0 p-0" href="https://youtube.com/heimdallsmash">
-                    <img class="social-icon m-0 p-0" src="img/social/iconmonstr-youtube-9.svg" alt="Heimdall - YouTube">
-                </a>
-            </div>
-        </div>
-    </footer>
+    <!-- <div id="contact_form" class="m-0 p-0"></div> -->
+        
+    <div id="footer" class="m-0 p-0"></div>
+    
+    <script src="js/elements.js"></script>
 
 
     <!-- Bootstrap JavaScript Libraries -->
