@@ -169,11 +169,23 @@
             if (isAutoPlay) thePlayer.addClass(cssClass.playing);
 
             thePlayer.find('.' + cssClass.playPause).on('click', function() {
+                // If the player clicked is already playing
                 if (thePlayer.hasClass(cssClass.playing)) {
                     $(this).attr('title', params.strPlay).find('a').html(params.strPlay);
                     thePlayer.removeClass(cssClass.playing);
                     isSupport ? theAudio.pause() : theAudio.Stop();
-                } else {
+                }
+                // If another audio player is running, stop it and play the new one
+                else if (playerExists()) {
+                    currentPlayer().pause();
+                    currentPlayerDiv().classList.remove("audioplayer-playing");
+
+                    $(this).attr('title', params.strPause).find('a').html(params.strPause);
+                    thePlayer.addClass(cssClass.playing);
+                    isSupport ? theAudio.play() : theAudio.Play();
+                }
+                // If the player is clicked and nothing else is playing
+                else {
                     $(this).attr('title', params.strPause).find('a').html(params.strPause);
                     thePlayer.addClass(cssClass.playing);
                     isSupport ? theAudio.play() : theAudio.Play();
@@ -186,3 +198,21 @@
         return this;
     };
 })(jQuery, window, document);
+
+
+function playerExists() {
+    if (document.getElementsByClassName("audioplayer-playing").length != 0) {
+        return true;
+    }
+    else {
+        return false
+    }
+}
+
+function currentPlayerDiv() {
+    return document.getElementsByClassName("audioplayer-playing").item(0);
+}
+
+function currentPlayer() {
+    return currentPlayerDiv().firstElementChild;
+}

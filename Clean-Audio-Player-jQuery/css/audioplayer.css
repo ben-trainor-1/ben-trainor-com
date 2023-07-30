@@ -130,7 +130,7 @@
 }
 
 .audioplayer:not(.audioplayer-playing) .audioplayer-bar-played::after {
-    border: 2px solid #BEC8D2;
+    border: 2px solid #cbbed2;
 }
 
 .audioplayer-playing .audioplayer-bar-played::after {
