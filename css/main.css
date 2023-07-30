@@ -83,6 +83,13 @@
         background-color: #18181a;
     }
 
+    .bg-tertiary {
+        background-color: #8169bc;
+    }
+    .bg-tertiary-dark {
+        background-color: #41306b;
+    }
+
 
     /* Centered text */
     .vertically-align {
@@ -349,6 +356,24 @@
     }
     .round-10 {
         border-radius: 10px;
+    }
+    .round-10-top {
+        border-radius: 10px 10px 0px 0px !important;
+    }
+    .round-10-bottom {
+        border-radius: 0px 0px 10px 10px !important;
+    }
+    @media only screen and (width >= 768px) {
+        .round-10-md {
+            border-radius: 10px !important;
+        }
+        .round-10-md-start {
+            border-radius: 10px 0px 0px 10px !important;
+        }
+    }
+
+    .shadow-1 {
+        filter: drop-shadow(0px 2px 5px #6464643d);
     }
     
     
