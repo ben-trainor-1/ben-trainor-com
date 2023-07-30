@@ -39,113 +39,15 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
-
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 
 </head>
 
 <body class="bg-dark m-0 p-0">
 
-    <header class="sticky-top bg-dark text-light row m-0 p-2 px-3">
-
-        <div class="col-xl-2 col-md-1 m-0 p-0"></div>
-
-        <!-- Main nav -->
-        <nav class="col-xl-8 col-md-10 navbar navbar-dark navbar-expand-lg m-0 p-0">
-
-            <h1 class="fw-bold fs-3 m-0 p-0">
-                <a class="link-light text-decoration-none" href="index.html">
-                    <img class="img-fluid menu-icon p-1" src="img/logos_2023/Overall/Ben Trainor Overall White.png" alt="">
-                </a>
-            </h1>
-
-
-            <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#menuBar"
-                aria-controls="menuBar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="row collapse navbar-collapse float-lg-end text-lg-end text-start me-md" id="menuBar">
-
-                <ul class="justify-content-end navbar-nav m-0 p-0 fs-5">
-
-                    <li class="nav-item ms-lg-4 ms-3 m-0 p-lg-0 py-2 pt-3 px-0"><a class="nav-link link-light m-0 p-0" href="index.html">Home</a></li>
-                    <li class="nav-item dropdown ms-lg-4 ms-3 m-0 p-0">
-                        <a class="nav-link link-secondary fw-bold dropdown-toggle m-0 p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Audio</a>
-                        <ul class="dropdown-menu mt-2 m-0 p-0" aria-labelledby="navbarScrollingDropdown">
-                            <li class="m-0 p-0"><a class="dropdown-item link-light m-0 p-2 px-3" href="music.html">Paper Watch</a></li>
-                            <li class="m-0 p-0"><a class="dropdown-item link-secondary fw-bold m-0 p-2 px-3" href="sound.html">Origami Studios</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item ms-lg-4 ms-3 m-0 p-lg-0 py-2 px-0"><a class="nav-link link-light fw-bold m-0 p-0" href="visual.html">Visual</a></li>
-                    <li class="nav-item ms-lg-4 ms-3 m-0 p-lg-0 py-2 px-0"><a class="nav-link link-light disabled m-0 p-0" href="guitar.html">Guitar</a></li>
-                    <li class="nav-item ms-lg-4 ms-3 m-0 p-lg-0 py-2 px-0"><a class="nav-link link-light m-0 p-0" href="https://paper-watch.creator-spring.com">Merch</a></li>
-                    <li class="nav-item ms-lg-4 ms-3 m-0 p-lg-0 py-2 px-0"><a class="nav-link link-light m-0 p-0" href="contact.html">Contact</a></li>
-
-
-                    <!--
-                                Dropdown menu template for later
-        
-                                <li class="nav-item dropdown ms-4 m-0 p-0">
-                                    <a class="nav-link link-light dropdown-toggle m-0 p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sound</a>
-                                    <ul class="dropdown-menu mt-2 m-0 p-0" aria-labelledby="navbarScrollingDropdown">
-                                        <li class="m-0 p-0"><a class="dropdown-item text-light m-0 p-2 px-3" href="#">Studio</a></li>
-                                        <li class="m-0 p-0"><a class="dropdown-item text-light m-0 p-2 px-3" href="#">Live</a></li>
-                                        <li class="m-0 p-0"><a class="dropdown-item text-light m-0 p-2 px-3" href="#">Design</a></li>
-                                    </ul>
-                                </li>
-                            -->
-
-                </ul>
-            </div>
-
-
-
-
-        </nav>
-
-        <div class="col-xl-2 col-md-1 m-0 p-0"></div>
-
-    </header>
-
-
-    <!-- Header image and text -->
-    <!-- <div class="header-box text-light text-center m-0 p-0 px-3">
-            
-            <div class="header-text container-fluid m-0 p-0">
-                <h1 class="text-shadow fw-bold m-0 p-0">Visual</h1>
-                <h2 class="text-shadow fst-italic fs-4 m-0 p-0">Composer, audio engineer, guitarist, and photographer</h2>
-                <div class="m-0 pb-5"></div>
-            </div>
-
-        </div> -->
-
-    <!-- Bio images section -->
-    <!-- <div class="container-fluid row bg-darker text-dark m-0 py-md-5 p-0">
-
-        <div class="col-xl-2 col-md-1 m-0 p-0"></div>
-    
-        <div class="col-xl-8 col-md-10 row m-0 p-0">
-            
-            <article id="sound_titleArticle" class="row home-article m-0 p-0">
-                <div class="bg-dark-50 text-light m-0 p-5">
-                    <h2 class="text-center text-uppercase text-shadow fw-bold m-0 mb-2 p-0">Engineering & Sound Design</h2>
-                    <h3 class="fw-bold fst-italic m-0 p-0 pb-2">Audio Engineering</h3>
-                    <h4 class="m-0 p-0 pb-3">
-                        My technical skill set lies both in the studio and a live setting. I thoroughly enjoy the recording, editing, 
-                        mixing, and mastering tracks in a variety of styles, but I also love the constraints of live performances.
-                    </h4>
-                    <h3 class="fw-bold fst-italic m-0 p-0 pb-2">Sound Design</h3>
-                    <h4 class="m-0 p-0 pb-3">
-                        The extension of my love of editing audio is my interest in sound design. I labor over the details to really
-                        dial in believable, intricate sounds for film and theater productions alike. Timing and quality are essential,
-                        but creativity is the key.
-                    </h4>
-                </div>
-            </article>
-            
-        </div>
-        
-    </div> -->
+    <div id="header" class="m-0 p-0"></div>
+    <script src="js/header.js" type="text/javascript"></script>
     
     <!-- Main Page -->
     <div class="container-fluid row bg-light text-dark m-0 p-0">
@@ -303,63 +205,73 @@
                             <th class="vertically-align ps-2 pe-3 pb-2">Client</th>
                             <th class="vertically-align ps-2 d-lg-table-cell d-none pb-2">Location</th>
                         </thead>
-                        <tr class="d-table-row m-0 p-0">
-                            <td class="vertically-align ps-2 pe-3 py-2">Event operations tech</td>
-                            <td class="vertically-align ps-2 pe-3 py-2">Spring Soirée</td>
-                            <td class="vertically-align ps-2 pe-3 d-lg-table-cell d-none py-2">4.22.23</td>
-                            <td class="vertically-align ps-2 pe-3 py-2">Augustine School</td>
-                            <td class="vertically-align ps-2 d-lg-table-cell d-none py-2">Madison Downs Venue</td>
-                        </tr>
-                        <tr class="d-table-row m-0 p-0">
-                            <td class="vertically-align ps-2 pe-3 py-2">Audio engineer</td>
-                            <td class="vertically-align ps-2 pe-3 py-2">West J WKND</td>
-                            <td class="vertically-align ps-2 pe-3 d-lg-table-cell d-none py-2">2.24.23-2.26.23</td>
-                            <td class="vertically-align ps-2 pe-3 py-2">West Jackson Baptist Church</td>
-                            <td class="vertically-align ps-2 d-lg-table-cell d-none py-2">Camp Linden</td>
-                        </tr>
-                        <tr class="d-table-row m-0 p-0">
-                            <td class="vertically-align ps-2 pe-3 py-2">Audio engineer</td>
-                            <td class="vertically-align ps-2 pe-3 py-2">Christ Has Come Christmas Concert</td>
-                            <td class="vertically-align ps-2 pe-3 d-lg-table-cell d-none py-2">12.11.22</td>
-                            <td class="vertically-align ps-2 pe-3 py-2">First Baptist Church</td>
-                            <td class="vertically-align ps-2 d-lg-table-cell d-none py-2">Jackson, TN</td>
-                        </tr>
-                        <tr class="d-table-row m-0 p-0">
-                            <td class="vertically-align ps-2 pe-3 py-2">Audio engineer</td>
-                            <td class="vertically-align ps-2 pe-3 py-2">Symphony on the Move</td>
-                            <td class="vertically-align ps-2 pe-3 d-lg-table-cell d-none py-2">11.29.22</td>
-                            <td class="vertically-align ps-2 pe-3 py-2">The Jackson Symphony</td>
-                            <td class="vertically-align ps-2 d-lg-table-cell d-none py-2">Jackson Country Club</td>
-                        </tr>
-                        <tr class="d-table-row m-0 p-0">
-                            <td class="vertically-align ps-2 pe-3 py-2">Audio engineer</td>
-                            <td class="vertically-align ps-2 pe-3 py-2">Hub City Weekend</td>
-                            <td class="vertically-align ps-2 pe-3 d-lg-table-cell d-none py-2">11.18.22-11.21.22</td>
-                            <td class="vertically-align ps-2 pe-3 py-2">West Jackson Baptist Church</td>
-                            <td class="vertically-align ps-2 d-lg-table-cell d-none py-2">Jackson, TN</td>
-                        </tr>
-                        <tr class="d-table-row m-0 p-0">
-                            <td class="vertically-align ps-2 pe-3 py-2">Audio engineer</td>
-                            <td class="vertically-align ps-2 pe-3 py-2">Let It Glow Kickoff Event</td>
-                            <td class="vertically-align ps-2 pe-3 d-lg-table-cell d-none py-2">11.11.22</td>
-                            <td class="vertically-align ps-2 pe-3 py-2">The Jackson Symphony</td>
-                            <td class="vertically-align ps-2 d-lg-table-cell d-none py-2">Union City, TN</td>
-                        </tr>
-                        <tr class="d-table-row m-0 p-0">
-                            <td class="vertically-align ps-2 pe-3 py-2">Audio engineer, sound designer</td>
-                            <td class="vertically-align ps-2 pe-3 py-2">Sweeney Todd</td>
-                            <td class="vertically-align ps-2 pe-3 d-lg-table-cell d-none py-2">10.22.22-10.31.22</td>
-                            <td class="vertically-align ps-2 pe-3 py-2">Ned Performing Arts Center</td>
-                            <td class="vertically-align ps-2 d-lg-table-cell d-none py-2">Jackson, TN</td>
-                        </tr>
+                        <tbody>
+                            <tr class="d-table-row m-0 p-0">
+                                <td class="vertically-align ps-2 pe-3 py-2">House audio engineer</td>
+                                <td class="vertically-align ps-2 pe-3 py-2">Dreamgirls</td>
+                                <td class="vertically-align ps-2 pe-3 d-lg-table-cell d-none py-2">8.12.23-8.27.23</td>
+                                <td class="vertically-align ps-2 pe-3 py-2">Ned Performing Arts Center</td>
+                                <td class="vertically-align ps-2 d-lg-table-cell d-none py-2">Jackson, TN</td>
+                            </tr>
+                            <tr class="d-table-row m-0 p-0">
+                                <td class="vertically-align ps-2 pe-3 py-2">Event operations tech</td>
+                                <td class="vertically-align ps-2 pe-3 py-2">Spring Soirée</td>
+                                <td class="vertically-align ps-2 pe-3 d-lg-table-cell d-none py-2">4.22.23</td>
+                                <td class="vertically-align ps-2 pe-3 py-2">Augustine School</td>
+                                <td class="vertically-align ps-2 d-lg-table-cell d-none py-2">Madison Downs Venue</td>
+                            </tr>
+                            <tr class="d-table-row m-0 p-0">
+                                <td class="vertically-align ps-2 pe-3 py-2">Audio engineer</td>
+                                <td class="vertically-align ps-2 pe-3 py-2">West J WKND</td>
+                                <td class="vertically-align ps-2 pe-3 d-lg-table-cell d-none py-2">2.24.23-2.26.23</td>
+                                <td class="vertically-align ps-2 pe-3 py-2">West Jackson Baptist Church</td>
+                                <td class="vertically-align ps-2 d-lg-table-cell d-none py-2">Camp Linden</td>
+                            </tr>
+                            <tr class="d-table-row m-0 p-0">
+                                <td class="vertically-align ps-2 pe-3 py-2">Audio engineer</td>
+                                <td class="vertically-align ps-2 pe-3 py-2">Christ Has Come Christmas Concert</td>
+                                <td class="vertically-align ps-2 pe-3 d-lg-table-cell d-none py-2">12.11.22</td>
+                                <td class="vertically-align ps-2 pe-3 py-2">First Baptist Church</td>
+                                <td class="vertically-align ps-2 d-lg-table-cell d-none py-2">Jackson, TN</td>
+                            </tr>
+                            <tr class="d-table-row m-0 p-0">
+                                <td class="vertically-align ps-2 pe-3 py-2">Audio engineer</td>
+                                <td class="vertically-align ps-2 pe-3 py-2">Symphony on the Move</td>
+                                <td class="vertically-align ps-2 pe-3 d-lg-table-cell d-none py-2">11.29.22</td>
+                                <td class="vertically-align ps-2 pe-3 py-2">The Jackson Symphony</td>
+                                <td class="vertically-align ps-2 d-lg-table-cell d-none py-2">Jackson Country Club</td>
+                            </tr>
+                            <tr class="d-table-row m-0 p-0">
+                                <td class="vertically-align ps-2 pe-3 py-2">Audio engineer</td>
+                                <td class="vertically-align ps-2 pe-3 py-2">Hub City Weekend</td>
+                                <td class="vertically-align ps-2 pe-3 d-lg-table-cell d-none py-2">11.18.22-11.21.22</td>
+                                <td class="vertically-align ps-2 pe-3 py-2">West Jackson Baptist Church</td>
+                                <td class="vertically-align ps-2 d-lg-table-cell d-none py-2">Jackson, TN</td>
+                            </tr>
+                            <tr class="d-table-row m-0 p-0">
+                                <td class="vertically-align ps-2 pe-3 py-2">Audio engineer</td>
+                                <td class="vertically-align ps-2 pe-3 py-2">Let It Glow Kickoff Event</td>
+                                <td class="vertically-align ps-2 pe-3 d-lg-table-cell d-none py-2">11.11.22</td>
+                                <td class="vertically-align ps-2 pe-3 py-2">The Jackson Symphony</td>
+                                <td class="vertically-align ps-2 d-lg-table-cell d-none py-2">Union City, TN</td>
+                            </tr>
+                            <tr class="d-table-row m-0 p-0">
+                                <td class="vertically-align ps-2 pe-3 py-2">Audio engineer, sound designer</td>
+                                <td class="vertically-align ps-2 pe-3 py-2">Sweeney Todd</td>
+                                <td class="vertically-align ps-2 pe-3 d-lg-table-cell d-none py-2">10.22.22-10.31.22</td>
+                                <td class="vertically-align ps-2 pe-3 py-2">Ned Performing Arts Center</td>
+                                <td class="vertically-align ps-2 d-lg-table-cell d-none py-2">Jackson, TN</td>
+                            </tr>
 
-                        <tr class="d-table-row m-0 p-0">
-                            <td class="vertically-align pe-3 py-2">Audio engineer</td>
-                            <td class="vertically-align pe-3 py-2">Union FUGE 2022</td>
-                            <td class="vertically-align pe-3 d-lg-table-cell d-none py-2">06.06.22-07.23.22</td>
-                            <td class="vertically-align pe-3 py-2">FUGE Camps</td>
-                            <td class="vertically-align d-lg-table-cell d-none py-2">Jackson, TN</td>
-                        </tr>
+                            <tr class="d-table-row m-0 p-0">
+                                <td class="vertically-align pe-3 py-2">Audio engineer</td>
+                                <td class="vertically-align pe-3 py-2">Union FUGE 2022</td>
+                                <td class="vertically-align pe-3 d-lg-table-cell d-none py-2">06.06.22-07.23.22</td>
+                                <td class="vertically-align pe-3 py-2">FUGE Camps</td>
+                                <td class="vertically-align d-lg-table-cell d-none py-2">Jackson, TN</td>
+                            </tr>
+                        </tbody>
+                        
 
                         <!-- <tr class="d-table-row m-0 p-0">
                             <td class="vertically-align pe-3 py-2"></td>

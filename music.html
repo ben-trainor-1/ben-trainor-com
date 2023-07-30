@@ -38,107 +38,15 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
 
-        
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 
     </head>
 
     <body class="bg-dark m-0 p-0">
 
-        <header class="sticky-top bg-dark text-light row m-0 p-2 px-3">
-
-            <div class="col-xl-2 col-md-1 m-0 p-0"></div>
-
-            <!-- Main nav -->
-            <nav class="col-xl-8 col-md-10 navbar navbar-dark navbar-expand-lg m-0 p-0">
-
-                <h1 class="fw-bold fs-3 m-0 p-0">
-                    <a class="link-light text-decoration-none" href="index.html">
-                        <img class="img-fluid menu-icon p-1" src="img/logos_2023/Overall/Ben Trainor Overall White.png" alt="">
-                    </a>
-                </h1>
-                
-                
-                    <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#menuBar" aria-controls="menuBar" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="row collapse navbar-collapse float-lg-end text-lg-end text-start me-md" id="menuBar">
-
-                        <ul class="justify-content-end navbar-nav m-0 p-0 fs-5">
-
-                            <li class="nav-item ms-lg-4 ms-3 m-0 p-lg-0 py-2 pt-3 px-0"><a class="nav-link link-light m-0 p-0" href="index.html">Home</a></li>
-                            <li class="nav-item dropdown ms-lg-4 ms-3 m-0 p-lg-0 py-2 px-0">
-                                <a class="nav-link link-secondary fw-bold dropdown-toggle m-0 p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Audio</a>
-                                <ul class="dropdown-menu mt-2 m-0 p-0" aria-labelledby="navbarScrollingDropdown">
-                                    <li class="m-0 p-0"><a class="dropdown-item link-secondary fw-bold m-0 p-2 px-3" href="music.html">Paper Watch</a></li>
-                                    <li class="m-0 p-0"><a class="dropdown-item link-light m-0 p-2 px-3" href="sound.html">Origami Studios</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item ms-lg-4 ms-3 m-0 p-lg-0 py-2 px-0"><a class="nav-link link-light m-0 p-0" href="visual.html">Visual</a></li>
-                            <li class="nav-item ms-lg-4 ms-3 m-0 p-lg-0 py-2 px-0"><a class="nav-link link-light disabled m-0 p-0" href="guitar.html">Guitar</a></li>
-                            <li class="nav-item ms-lg-4 ms-3 m-0 p-lg-0 py-2 px-0"><a class="nav-link link-light m-0 p-0" href="https://paper-watch.creator-spring.com">Merch</a></li>
-                            <li class="nav-item ms-lg-4 ms-3 m-0 p-lg-0 py-2 px-0"><a class="nav-link link-light m-0 p-0" href="contact.html">Contact</a></li>
-        
-        
-                            <!--
-                                Dropdown menu template for later
-        
-                                <li class="nav-item dropdown ms-4 m-0 p-0">
-                                    <a class="nav-link link-light dropdown-toggle m-0 p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sound</a>
-                                    <ul class="dropdown-menu mt-2 m-0 p-0" aria-labelledby="navbarScrollingDropdown">
-                                        <li class="m-0 p-0"><a class="dropdown-item text-light m-0 p-2 px-3" href="#">Studio</a></li>
-                                        <li class="m-0 p-0"><a class="dropdown-item text-light m-0 p-2 px-3" href="#">Live</a></li>
-                                        <li class="m-0 p-0"><a class="dropdown-item text-light m-0 p-2 px-3" href="#">Design</a></li>
-                                    </ul>
-                                </li>
-                            -->
-        
-                        </ul>
-                    </div>
-                    
-
-                
-
-            </nav>
-
-            <div class="col-xl-2 col-md-1 m-0 p-0"></div>
-            
-        </header>
-        
-
-        <!-- Header image and text -->
-        <!-- <div class="header-box text-light text-center m-0 p-0 px-3">
-            
-            <div class="header-text container-fluid m-0 p-0">
-                <h1 class="text-shadow fw-bold m-0 p-0">Ben Trainor</h1>
-                <h2 class="text-shadow fst-italic fs-4 m-0 p-0">Composer, audio engineer, guitarist, and photographer</h2>
-                <div class="m-0 pb-5"></div>
-            </div>
-
-        </div> -->
-
-        <!-- Bio images section -->
-        <!-- <div class="container-fluid row bg-darker text-dark m-0 py-md-5 p-0">
-
-            <div class="col-xl-2 col-md-1 m-0 p-0"></div>
-
-            <div class="col-xl-8 col-md-10 row m-0 p-0">
-
-                <article id="music_titleArticle" class="row home-article m-0 p-0">
-                    <div class="bg-dark-50 m-0 p-5">
-                        <h2 class="text-light text-shadow fw-bold m-0 mb-2 p-0">Music</h2>
-                        <h3 class="text-light m-0 p-0">
-                            Starting from little riffs and working my way up to fully-fledged scores, I've always loved coming
-                            up with musical ideas ever since I started playing guitar. Below you'll find links to my Paper Watch
-                            projects, freelance scores, and sheet music. I'm always looking for video games and films to work on!
-                        </h3>
-                    </div>
-                </article>
-                
-            </div>
-            
-        </div> -->
-
+        <div id="header" class="m-0 p-0"></div>
+        <script src="js/header.js" type="text/javascript"></script>
 
         <!-- Specific sections of page -->
         <div class="container-fluid row bg-light text-dark m-0 p-0">

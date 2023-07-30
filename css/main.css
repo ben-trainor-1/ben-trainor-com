@@ -90,7 +90,7 @@
 
     /* Menu icon */
     .menu-icon {
-        max-height: 65px;
+        max-height: 50px;
     }
 
     /* Blue links */
@@ -256,6 +256,10 @@
 
     .form-required {
         color: rgb(220, 0, 0);
+    }
+
+    .form input, .form select, .form textarea, .form .btn {
+        border-radius: 10px
     }
 
     #modal_contact {
