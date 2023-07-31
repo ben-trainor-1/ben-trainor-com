@@ -13,19 +13,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Mailchimp integration -->
-    <!-- <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/c366dacf0264d8ff535817885/1c1464baf1c4283350f78e241.js");</script> -->
-
-
     <!-- Bootstrap CSS v5.0.2 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Main stylesheets -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/background_img.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/background_img.css">
 
     <script src="js/photos.js" async type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -33,85 +30,15 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
-
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 
 </head>
 
 <body class="bg-dark m-0 p-0">
 
-    <header class="sticky-top bg-dark text-light row m-0 p-2 px-3">
-
-        <div class="col-xl-2 col-md-1 m-0 p-0"></div>
-
-        <!-- Main nav -->
-        <nav class="col-xl-8 col-md-10 navbar navbar-dark navbar-expand-lg m-0 p-0">
-
-            <h1 class="fw-bold fs-3 m-0 p-0">
-                <a class="link-light text-decoration-none" href="index.html">
-                    <img class="img-fluid menu-icon p-1" src="img/logos_2023/Overall/Ben Trainor Overall White.png" alt="">
-                </a>
-            </h1>
-
-
-            <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#menuBar"
-                aria-controls="menuBar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="row collapse navbar-collapse float-lg-end text-lg-end text-start me-md" id="menuBar">
-
-                <ul class="justify-content-end navbar-nav m-0 p-0 fs-5">
-
-                    <li class="nav-item ms-lg-4 ms-3 m-0 p-lg-0 py-2 pt-3 px-0"><a class="nav-link link-light m-0 p-0" href="index.html">Home</a></li>
-                    <li class="nav-item dropdown ms-lg-4 ms-3 m-0 p-0">
-                        <a class="nav-link link-light dropdown-toggle m-0 p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Audio</a>
-                        <ul class="dropdown-menu mt-2 m-0 p-0" aria-labelledby="navbarScrollingDropdown">
-                            <li class="m-0 p-0"><a class="dropdown-item link-light m-0 p-2 px-3" href="music.html">Paper Watch</a></li>
-                            <li class="m-0 p-0"><a class="dropdown-item link-light m-0 p-2 px-3" href="sound.html">Origami Studios</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item ms-lg-4 ms-3 m-0 p-lg-0 py-2 px-0"><a class="nav-link link-light m-0 p-0" href="visual.html">Visual</a></li>
-                    <li class="nav-item ms-lg-4 ms-3 m-0 p-lg-0 py-2 px-0"><a class="nav-link link-light disabled m-0 p-0" href="guitar.html">Guitar</a></li>
-                    <li class="nav-item ms-lg-4 ms-3 m-0 p-lg-0 py-2 px-0"><a class="nav-link link-light m-0 p-0" href="https://paper-watch.creator-spring.com">Merch</a></li>
-                    <li class="nav-item ms-lg-4 ms-3 m-0 p-lg-0 py-2 px-0"><a class="nav-link link-secondary fw-bold m-0 p-0" href="contact.html">Contact</a></li>
-
-
-                    <!--
-                                Dropdown menu template for later
-        
-                                <li class="nav-item dropdown ms-4 m-0 p-0">
-                                    <a class="nav-link link-light dropdown-toggle m-0 p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sound</a>
-                                    <ul class="dropdown-menu mt-2 m-0 p-0" aria-labelledby="navbarScrollingDropdown">
-                                        <li class="m-0 p-0"><a class="dropdown-item text-light m-0 p-2 px-3" href="#">Studio</a></li>
-                                        <li class="m-0 p-0"><a class="dropdown-item text-light m-0 p-2 px-3" href="#">Live</a></li>
-                                        <li class="m-0 p-0"><a class="dropdown-item text-light m-0 p-2 px-3" href="#">Design</a></li>
-                                    </ul>
-                                </li>
-                            -->
-
-                </ul>
-            </div>
-
-
-
-
-        </nav>
-
-        <div class="col-xl-2 col-md-1 m-0 p-0"></div>
-
-    </header>
-
-
-    <!-- Header image and text -->
-    <!-- <div class="header-box text-light text-center m-0 p-0 px-3">
-            
-            <div class="header-text container-fluid m-0 p-0">
-                <h1 class="text-shadow fw-bold m-0 p-0">Visual</h1>
-                <h2 class="text-shadow fst-italic fs-4 m-0 p-0">Composer, audio engineer, guitarist, and photographer</h2>
-                <div class="m-0 pb-5"></div>
-            </div>
-
-        </div> -->
+    
+    <div id="header" class="m-0 p-0"></div>
 
     <!-- Bio images section -->
     <div class="container-fluid row bg-darker text-dark m-0 pt-md-5 pb-md-3 p-0">
@@ -150,7 +77,7 @@
         <div class="row m-0 p-md-0 p-3 pt-0">
             <div class="col-xl-3 col-lg-2 col-md-1 m-0 p-0"></div>
             <div class="col-xl-6 col-lg-8 col-md-10 bg-white shadow m-0 p-md-0 p-2 p-0 border round-10">
-                <iframe id="iframe_contact_full" class="m-0 p-0 round-10" src="contact_form.html" frameborder="0"></iframe>
+                <iframe id="iframe_contact_full" class="m-0 p-0 round-10" src="../elements/contact_form.html" frameborder="0"></iframe>
             </div>
         </div>
 
@@ -158,27 +85,11 @@
     </div>
 
 
-    <footer class="row bg-darker m-0 p-0 px-3 py-md-5 py-4">
-        <div class="col-xl-2 col-md-1 m-0 p-0"></div>
-        <div class="row col-xl-8 col-md-10 text-light m-0 p-0">
-            <div class="col-3 m-0 p-0"></div>
-            <div class="col-2 text-center m-0 p-0">
-                <a class="text-center m-0 p-0" href="https://instagram.com/benjammintrain">
-                    <img class="social-icon m-0 p-0" src="img/social/iconmonstr-instagram-4.svg" alt="Ben Trainor - Instagram">
-                </a>
-            </div>
-            <div class="col-2 text-center m-0 p-0">
-                <a class="text-center m-0 p-0" href="https://open.spotify.com/artist/1BD8tdMfutOoshPyrhvy59?si=PxngBkGOTFmQ_gEGqk3q9A">
-                    <img class="social-icon m-0 p-0" src="img/social/iconmonstr-spotify-4.svg" alt="Paper Watch">
-                </a>
-            </div>
-            <div class="col-2 text-center m-0 p-0">
-                <a class="text-center m-0 p-0" href="https://youtube.com/heimdallsmash">
-                    <img class="social-icon m-0 p-0" src="img/social/iconmonstr-youtube-9.svg" alt="Heimdall - YouTube">
-                </a>
-            </div>
-        </div>
-    </footer>
+    <!-- <div id="contact_form" class="m-0 p-0"></div> -->
+        
+    <div id="footer" class="m-0 p-0"></div>
+    
+    <script src="js/elements.js"></script>
 
 
     <!-- Bootstrap JavaScript Libraries -->

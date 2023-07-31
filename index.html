@@ -33,79 +33,21 @@
         <!-- Main stylesheets -->
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/background_img.css">
-
+        
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
-
         
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 
     </head>
 
     <body class="bg-dark m-0 p-0">
 
-        <header class="sticky-top bg-dark text-light row m-0 p-2 px-3">
-
-            <div class="col-xl-2 col-md-1 m-0 p-0"></div>
-
-            <!-- Main nav -->
-            <nav class="col-xl-8 col-md-10 navbar navbar-dark navbar-expand-lg m-0 p-0">
-
-                <h1 class="fw-bold fs-3 m-0 p-0">
-                    <a class="link-light text-decoration-none" href="index.html">
-                        <img class="img-fluid menu-icon p-1" src="img/logos_2023/Overall/Ben Trainor Overall White.png" alt="">
-                    </a>
-                </h1>
-                
-                
-                    <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#menuBar" aria-controls="menuBar" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="row collapse navbar-collapse float-lg-end text-lg-end text-start me-md" id="menuBar">
-
-                        <ul class="justify-content-end navbar-nav m-0 p-0 fs-5">
-
-                            <li class="nav-item ms-lg-4 ms-3 m-0 p-lg-0 py-2 pt-3 px-0"><a class="nav-link link-secondary fw-bold m-0 p-0" href="index.html">Home</a></li>
-                            <li class="nav-item dropdown ms-lg-4 ms-3 m-0 p-0">
-                                <a class="nav-link link-light dropdown-toggle m-0 p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Audio</a>
-                                <ul class="dropdown-menu mt-2 m-0 p-0" aria-labelledby="navbarScrollingDropdown">
-                                    <li class="m-0 p-0"><a class="dropdown-item link-light m-0 p-2 px-3" href="music.html">Paper Watch</a></li>
-                                    <li class="m-0 p-0"><a class="dropdown-item link-light m-0 p-2 px-3" href="sound.html">Origami Studios</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item ms-lg-4 ms-3 m-0 p-lg-0 py-2 px-0"><a class="nav-link link-light m-0 p-0" href="visual.html">Visual</a></li>
-                            <li class="nav-item ms-lg-4 ms-3 m-0 p-lg-0 py-2 px-0"><a class="nav-link link-light disabled m-0 p-0" href="guitar.html">Guitar</a></li>
-                            <li class="nav-item ms-lg-4 ms-3 m-0 p-lg-0 py-2 px-0"><a class="nav-link link-light m-0 p-0" href="https://paper-watch.creator-spring.com">Merch</a></li>
-                            <li class="nav-item ms-lg-4 ms-3 m-0 p-lg-0 py-2 px-0"><a class="nav-link link-light m-0 p-0" href="contact.html">Contact</a></li>
-        
-        
-                            <!--
-                                Dropdown menu template for later
-        
-                                <li class="nav-item dropdown ms-4 m-0 p-0">
-                                    <a class="nav-link link-light dropdown-toggle m-0 p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sound</a>
-                                    <ul class="dropdown-menu mt-2 m-0 p-0" aria-labelledby="navbarScrollingDropdown">
-                                        <li class="m-0 p-0"><a class="dropdown-item text-light m-0 p-2 px-3" href="#">Studio</a></li>
-                                        <li class="m-0 p-0"><a class="dropdown-item text-light m-0 p-2 px-3" href="#">Live</a></li>
-                                        <li class="m-0 p-0"><a class="dropdown-item text-light m-0 p-2 px-3" href="#">Design</a></li>
-                                    </ul>
-                                </li>
-                            -->
-        
-                        </ul>
-                    </div>
-                    
-
-                
-
-            </nav>
-
-            <div class="col-xl-2 col-md-1 m-0 p-0"></div>
-            
-        </header>
+        <div id="header" class="m-0 p-0"></div>
         
 
         <!-- Header image and text -->
@@ -117,28 +59,6 @@
             </div> -->
 
         </div>
-
-        <!-- Bio images section -->
-        <!-- <div class="container-fluid row bg-darker text-dark m-0 py-md-5 p-0">
-
-            <div class="col-xl-2 col-md-1 m-0 p-0"></div>
-
-            <div class="col-xl-8 col-md-10 row m-0 p-0">
-
-                <article id="home_bioArticle" class="row home-article m-0 p-0">
-                    <div class="bg-dark-50 m-0 p-5">
-                        <h2 class="text-light text-shadow fw-bold m-0 mb-2 p-0">About me</h2>
-                        <h3 class="text-light m-0 p-0">
-                            Hey there! My name is Ben Trainor, and I'm passionate about too many things. I love photography,
-                            playing guitar, recording and mixing music, and writing scores. Hit me up if you're working on a
-                            short film, video game, or want some portraits taken!
-                        </h3>
-                    </div>
-                </article>
-                
-            </div>
-            
-        </div> -->
 
         <!-- What I do -->
         <div class="container-fluid row bg-darker text-light m-0 p-0 pb-md-5">
@@ -206,63 +126,11 @@
             
         </div>
 
-        <!-- Contact -->
-        <div class="container-fluid row m-0 p-0">
-
-            <div class="col-xl-1 col-md-1 m-0 p-0"></div>
-
-            <div class="col-xl-10 col-md-10 m-0 p-0 text-center">
-
-                <!-- Button trigger modal -->
-            
-                <h1 class="fw-bold text-light m-0 p-5">
-                    <a id="a_contact" class="link-light m-0 p-4 px-5 rounded" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contact me</a>
-                </h1>
-                
-                <!-- Modal -->
-                <div class="modal fade m-0 p-0" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div id="modal_contact" class="modal-dialog modal-lg modal-dialog-centered p-0">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="staticBackdropLabel">Shoot me an email!</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body row m-0 p-0">
-                                <iframe id="iframe_contact" class="m-0 p-0 round-10" src="contact_form.html" frameborder="0"></iframe>
-                            </div>
-                            <!-- <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            
-        </div>
-
+        <div id="contact_form" class="m-0 p-0"></div>
         
-        <footer class="row bg-darker m-0 p-0 px-3 py-md-5 py-4">
-            <div class="col-xl-2 col-md-1 m-0 p-0"></div>
-            <div class="row col-xl-8 col-md-10 text-light m-0 p-0">
-                <div class="col-3 m-0 p-0"></div>
-                <div class="col-2 text-center m-0 p-0">
-                    <a class="text-center m-0 p-0" href="https://instagram.com/benjammintrain">
-                        <img class="social-icon m-0 p-0" src="img/social/iconmonstr-instagram-4.svg" alt="Ben Trainor - Instagram">
-                    </a>
-                </div>
-                <div class="col-2 text-center m-0 p-0">
-                    <a class="text-center m-0 p-0" href="https://open.spotify.com/artist/1BD8tdMfutOoshPyrhvy59?si=PxngBkGOTFmQ_gEGqk3q9A">
-                        <img class="social-icon m-0 p-0" src="img/social/iconmonstr-spotify-4.svg" alt="Paper Watch">
-                    </a>
-                </div>
-                <div class="col-2 text-center m-0 p-0">
-                    <a class="text-center m-0 p-0" href="https://youtube.com/heimdallsmash">
-                        <img class="social-icon m-0 p-0" src="img/social/iconmonstr-youtube-9.svg" alt="Heimdall - YouTube">
-                    </a>
-                </div>
-            </div>
-        </footer>
+        <div id="footer" class="m-0 p-0"></div>
+        
+        <script src="js/elements.js"></script>
         
         
         <!-- Bootstrap JavaScript Libraries -->
