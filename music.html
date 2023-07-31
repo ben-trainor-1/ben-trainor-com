@@ -225,72 +225,121 @@
             </div>
 
 
-            <div class="row bg-darker m-0 p-md-4 p-2 justify-content-center">
+            <div class="row bg-darker m-0 py-4 px-1 justify-content-center">
 
-                <div class="row fs-6 col-xxl-6 col-lg-8 col-md-10 col-12 m-0 p-0">
+                <button class="carousel-control-prev col-lg-2 col-1" type="button" data-bs-target="#score_carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <div class="row fs-6 col-xxl-7 col-lg-10 col-10 m-0 p-0">
                     
-                    <!-- MONTE CRISTO -->
-                    <div class="container-fluid bg-light round-10 m-0 mb-3 p-0 p-md-3 p-4">
+                    <div id="score_carousel" class="carousel" data-bs-ride="carousel" data-bs-interval="false">
 
-                        <div class="col-12 m-0 mb-4 p-0">
-                            <img src="img/paper_watch/albums/monte_cristo_resized_small.jpg" class="img-fluid d-inline round-10 col-2 m-0 me-2 p-0" alt="">
-                            <h2 class="d-inline align-middle fw-bold m-0 p-0">The Count of Monte Cristo</h2>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#score_carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#score_carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         </div>
 
-                        <div class="d-flex flex-md-row flex-column col-12 m-0 mb-4 p-0 shadow-1">
-                            <span class="col-md-5 round-10-md-start round-10-top bg-tertiary-dark text-white col-12 align-self-center m-0 p-2">Act I</span>
-                            <audio src="audio/COMC_Act_I.mp3" class="align-self-center" preload="auto" controls></audio>
-                        </div>
+                        <div class="carousel-inner">
 
-                        <div class="d-flex flex-md-row flex-column col-12 m-0 mb-4 p-0 shadow-1">
-                            <span class="col-md-5 round-10-md-start round-10-top bg-tertiary-dark text-white col-12 align-self-center m-0 p-2">Albert's Theme</span>
-                            <audio src="audio/COMC_Alberts_Theme.mp3" class="align-self-center" preload="auto" controls></audio>
-                        </div>
-
-                        <div class="d-flex flex-md-row flex-column col-12 m-0 mb-4 p-0 shadow-1">
-                            <span class="col-md-5 round-10-md-start round-10-top bg-tertiary-dark text-white col-12 align-self-center m-0 p-2">Brutus</span>
-                            <audio src="audio/COMC_Brutus.mp3" class="align-self-center" preload="auto" controls></audio>
-                        </div>
-
-                        <div class="d-flex flex-md-row flex-column col-12 m-0 p-0 shadow-1">
-                            <span class="col-md-5 round-10-md-start round-10-top bg-tertiary-dark text-white col-12 align-self-center m-0 p-2">The Happiness of Revenge</span>
-                            <audio src="audio/COMC_The_Happiness_of_Revenge.mp3" class="align-self-center" preload="auto" controls></audio>
+                            <!-- MONTE CRISTO -->
+                            <div class="carousel-item active container-fluid bg-light round-10 m-0 mb-3 p-0 p-3">
+        
+                                <div class="row align-items-center bg-white shadow-1 round-10 m-0 mb-4 p-3">
+                                    <div class="col-9 align-self-start align-middle m-0 p-0 pe-2">
+                                        <h2 class="fw-bold m-0 p-0">The Count of Monte Cristo</h2>
+                                        <p class="text-black-50 m-0 p-0">February 2022</p>
+                                        <p class="m-0 p-0">Directed by Kristin Klonowski, performed by the Union University Players at the W. D. Powell Theatre</p>
+                                        <ul class="list-unstyled list-inline m-0 p-0">
+                                            <li class="list-inline-item m-0 p-0"><a href="#" class="nav-link link-dark disabled m-0 p-0">Spotify</a></li>
+                                            <li class="list-inline-item m-0 p-0">•</li>
+                                            <li class="list-inline-item m-0 p-0"><a href="#" class="nav-link link-dark disabled m-0 p-0">Apple Music</a></li>
+                                            <li class="list-inline-item m-0 p-0">•</li>
+                                            <li class="list-inline-item m-0 p-0"><a href="#" class="nav-link link-secondary-dark m-0 p-0">Bandcamp</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="row col justify-content-end m-0 p-0">
+                                        <img src="img/paper_watch/albums/monte_cristo_resized_small.jpg" class="img-fluid album-cover round-10 m-0 p-0" alt="">
+                                    </div>
+                                </div>
+        
+                                <div class="d-flex flex-lg-row flex-column col-12 m-0 mb-4 p-0 shadow-1">
+                                    <span class="round-10-lg-start round-10-top bg-tertiary-dark text-white col-lg-5 col-12 align-self-center m-0 p-2">Act I</span>
+                                    <audio src="audio/COMC_Act_I.mp3" class="align-self-center" preload="auto" controls></audio>
+                                </div>
+        
+                                <div class="d-flex flex-lg-row flex-column col-12 m-0 mb-4 p-0 shadow-1">
+                                    <span class="round-10-lg-start round-10-top bg-tertiary-dark text-white col-lg-5 col-12 align-self-center m-0 p-2">Albert's Theme</span>
+                                    <audio src="audio/COMC_Alberts_Theme.mp3" class="align-self-center" preload="auto" controls></audio>
+                                </div>
+        
+                                <div class="d-flex flex-lg-row flex-column col-12 m-0 mb-4 p-0 shadow-1">
+                                    <span class="round-10-lg-start round-10-top bg-tertiary-dark text-white col-lg-5 col-12 align-self-center m-0 p-2">Brutus</span>
+                                    <audio src="audio/COMC_Brutus.mp3" class="align-self-center" preload="auto" controls></audio>
+                                </div>
+        
+                                <div class="d-flex flex-lg-row flex-column col-12 m-0 p-0 shadow-1">
+                                    <span class="round-10-lg-start round-10-top bg-tertiary-dark text-white col-lg-5 col-12 align-self-center m-0 p-2">The Happiness of Revenge</span>
+                                    <audio src="audio/COMC_The_Happiness_of_Revenge.mp3" class="align-self-center" preload="auto" controls></audio>
+                                </div>
+        
+                            </div>
+        
+                            <!-- MIDSUMMER -->
+                            <div class="carousel-item container-fluid bg-light round-10 m-0 mb-3 p-0 p-3">
+        
+                                <div class="row align-items-center bg-white shadow-1 round-10 m-0 mb-4 p-3">
+                                    <div class="col-9 align-self-start align-middle m-0 p-0 pe-2">
+                                        <h2 class="fw-bold m-0 p-0">A Midsummer Night's Dream</h2>
+                                        <ul class="list-unstyled list-inline m-0 p-0">
+                                            <li class="list-inline-item m-0 p-0"><a href="#" class="nav-link link-dark disabled m-0 p-0">Spotify</a></li>
+                                            <li class="list-inline-item m-0 p-0">•</li>
+                                            <li class="list-inline-item m-0 p-0"><a href="#" class="nav-link link-dark disabled m-0 p-0">Apple Music</a></li>
+                                            <li class="list-inline-item m-0 p-0">•</li>
+                                            <li class="list-inline-item m-0 p-0"><a href="#" class="nav-link link-dark disabled m-0 p-0">Bandcamp</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="row col justify-content-end m-0 p-0">
+                                        <img src="img/paper_watch/albums/coming_soon_midsummer.png" class="img-fluid album-cover round-10 m-0 p-0" alt="">
+                                    </div>
+                                </div>
+        
+                                <div class="d-flex flex-lg-row flex-column col-12 m-0 mb-4 p-0 shadow-1">
+                                    <span class="round-10-lg-start round-10-top bg-tertiary-dark text-white col-lg-5 col-12 align-self-center m-0 p-2">Opening</span>
+                                    <audio src="audio/MIDS_Opening.mp3" class="align-self-center" preload="auto" controls></audio>
+                                </div>
+        
+                                <div class="d-flex flex-lg-row flex-column col-12 m-0 mb-4 p-0 shadow-1">
+                                    <span class="round-10-lg-start round-10-top bg-tertiary-dark text-white col-lg-5 col-12 align-self-center m-0 p-2">Fairy Dispute</span>
+                                    <audio src="audio/MIDS_Fairy_Dispute.mp3" class="align-self-center" preload="auto" controls></audio>
+                                </div>
+        
+                                <div class="d-flex flex-lg-row flex-column col-12 m-0 mb-4 p-0 shadow-1">
+                                    <span class="round-10-lg-start round-10-top bg-tertiary-dark text-white col-lg-5 col-12 align-self-center m-0 p-2">The Love Potion</span>
+                                    <audio src="audio/MIDS_The_Love_Potion.mp3" class="align-self-center" preload="auto" controls></audio>
+                                </div>
+        
+                                <div class="d-flex flex-lg-row flex-column col-12 m-0 p-0 shadow-1">
+                                    <span class="round-10-lg-start round-10-top bg-tertiary-dark text-white col-lg-5 col-12 align-self-center m-0 p-2">Crossed Lovers</span>
+                                    <audio src="audio/MIDS_Crossed_Lovers.mp3" class="align-self-center" preload="auto" controls></audio>
+                                </div>
+        
+                            </div>
+                            
                         </div>
 
                     </div>
-
-                    <!-- MIDSUMMER -->
-                    <div class="container-fluid bg-light rounded rounded rounded-3 m-0 p-0 p-md-5 p-4">
-
-                        <h2 class="text-center fw-bold m-0 mb-4 p-0">A Midsummer Night's Dream</h2>
-
-                        <div class="d-flex flex-md-row flex-column col-12 m-0 mb-4 p-0 shadow-1">
-                            <span class="col-md-5 round-10-md-start round-10-top bg-tertiary-dark text-white col-12 align-self-center m-0 p-2">Opening</span>
-                            <audio src="audio/MIDS_Opening.mp3" class="align-self-center" preload="auto" controls></audio>
-                        </div>
-
-                        <div class="d-flex flex-md-row flex-column col-12 m-0 mb-4 p-0 shadow-1">
-                            <span class="col-md-5 round-10-md-start round-10-top bg-tertiary-dark text-white col-12 align-self-center m-0 p-2">Fairy Dispute</span>
-                            <audio src="audio/MIDS_Fairy_Dispute.mp3" class="align-self-center" preload="auto" controls></audio>
-                        </div>
-
-                        <div class="d-flex flex-md-row flex-column col-12 m-0 mb-4 p-0 shadow-1">
-                            <span class="col-md-5 round-10-md-start round-10-top bg-tertiary-dark text-white col-12 align-self-center m-0 p-2">The Love Potion</span>
-                            <audio src="audio/MIDS_The_Love_Potion.mp3" class="align-self-center" preload="auto" controls></audio>
-                        </div>
-
-                        <div class="d-flex flex-md-row flex-column col-12 m-0 mb-4 p-0 shadow-1">
-                            <span class="col-md-5 round-10-md-start round-10-top bg-tertiary-dark text-white col-12 align-self-center m-0 p-2">Crossed Lovers</span>
-                            <audio src="audio/MIDS_Crossed_Lovers.mp3" class="align-self-center" preload="auto" controls></audio>
-                        </div>
-
-                    </div>
-                    
+                        
                 </div>
-
+                    
+                <button class="carousel-control-next col-lg-2 col-1" type="button" data-bs-target="#score_carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                
             </div>
 
-            
         </div>
         
 

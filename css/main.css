@@ -349,6 +349,12 @@
         filter: brightness(.5) blur(1px);
         padding: 5px;
     }
+    .album-cover {
+        min-height: 80px;
+        min-width: 80px;
+        max-height: 150px;
+        max-width: 150px;
+    }
 
     /* Rounded corners */
     .round-5 {
@@ -362,6 +368,14 @@
     }
     .round-10-bottom {
         border-radius: 0px 0px 10px 10px !important;
+    }
+    @media only screen and (width >= 992px) {
+        .round-10-lg {
+            border-radius: 10px !important;
+        }
+        .round-10-lg-start {
+            border-radius: 10px 0px 0px 10px !important;
+        }
     }
     @media only screen and (width >= 768px) {
         .round-10-md {
@@ -400,3 +414,12 @@
 
     
     
+/* Carousel overrides */
+
+.carousel-control-next, .carousel-control-prev {
+    position: relative !important;
+    width: auto !important;
+}
+.carousel-indicators {
+    margin-bottom: -1rem !important;
+}
