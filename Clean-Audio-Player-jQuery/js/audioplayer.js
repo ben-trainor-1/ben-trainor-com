@@ -68,6 +68,7 @@
                 });
             } else if (canPlayType(audioFile)) isSupport = true;
 
+            // Modified by Ben Trainor (added rounding classes for music page design)
             var thePlayer = $('<div class="round-10-lg round-10-bottom ' + params.classPrefix + '">' + (isSupport ? $('<div>').append($this.eq(0).clone()).html() : '<embed src="' + audioFile + '" width="0" height="0" volume="100" autostart="' + isAutoPlay.toString() + '" loop="' + isLoop.toString() + '" />') + '<div class="' + cssClass.playPause + '" title="' + params.strPlay + '"><a href="#">' + params.strPlay + '</a></div></div>'),
                 theAudio = isSupport ? thePlayer.find('audio') : thePlayer.find('embed'),
                 theAudio = theAudio.get(0);
@@ -168,6 +169,7 @@
 
             if (isAutoPlay) thePlayer.addClass(cssClass.playing);
 
+            // Modified by Ben Trainor
             thePlayer.find('.' + cssClass.playPause).on('click', function() {
                 // If the player clicked is already playing
                 if (thePlayer.hasClass(cssClass.playing)) {
@@ -200,6 +202,7 @@
 })(jQuery, window, document);
 
 
+// Additional functions added by Ben Trainor
 function playerExists() {
     if (document.getElementsByClassName("audioplayer-playing").length != 0) {
         return true;
