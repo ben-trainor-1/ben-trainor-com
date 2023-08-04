@@ -350,6 +350,12 @@
         padding: 5px;
     }
     .album-cover {
+        min-height: 100px;
+        min-width: 100px;
+        max-height: 200px;
+        max-width: 200px;
+    }
+    .score-cover {
         min-height: 80px;
         min-width: 80px;
         max-height: 150px;
