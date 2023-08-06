@@ -44,6 +44,10 @@
         color: #222222;
     }
 
+    .fs-55 {
+        font-size: 1.15rem !important;
+    }
+
     .header-text > h1 {
         font-size: 60px;
     }
@@ -77,6 +81,13 @@
     }
     .bg-darker {
         background-color: #18181a;
+    }
+
+    .bg-tertiary {
+        background-color: #8169bc;
+    }
+    .bg-tertiary-dark {
+        background-color: #41306b;
     }
 
 
@@ -338,6 +349,18 @@
         filter: brightness(.5) blur(1px);
         padding: 5px;
     }
+    .album-cover {
+        min-height: 100px;
+        min-width: 100px;
+        max-height: 200px;
+        max-width: 200px;
+    }
+    .score-cover {
+        min-height: 80px;
+        min-width: 80px;
+        max-height: 150px;
+        max-width: 150px;
+    }
 
     /* Rounded corners */
     .round-5 {
@@ -345,6 +368,32 @@
     }
     .round-10 {
         border-radius: 10px;
+    }
+    .round-10-top {
+        border-radius: 10px 10px 0px 0px !important;
+    }
+    .round-10-bottom {
+        border-radius: 0px 0px 10px 10px !important;
+    }
+    @media only screen and (width >= 992px) {
+        .round-10-lg {
+            border-radius: 10px !important;
+        }
+        .round-10-lg-start {
+            border-radius: 10px 0px 0px 10px !important;
+        }
+    }
+    @media only screen and (width >= 768px) {
+        .round-10-md {
+            border-radius: 10px !important;
+        }
+        .round-10-md-start {
+            border-radius: 10px 0px 0px 10px !important;
+        }
+    }
+
+    .shadow-1 {
+        filter: drop-shadow(0px 2px 5px #6464643d);
     }
     
     
@@ -371,3 +420,12 @@
 
     
     
+/* Carousel overrides */
+
+.carousel-control-next, .carousel-control-prev {
+    position: relative !important;
+    width: auto !important;
+}
+.carousel-indicators {
+    margin-bottom: -1rem !important;
+}
