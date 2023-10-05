@@ -19,6 +19,10 @@
     opacity: 100%;
 }
 
+#home_coverPhoto {
+    background-image: url('../img/ben_trainor/aliens.jpg');
+}
+
 #home_bioArticle {
     background-image: url('../img/ben_trainor/lens_cap_resized.jpg');
 }

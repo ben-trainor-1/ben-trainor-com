@@ -69,7 +69,7 @@
         transition-duration: .2s;
     }
     #a_contact:hover {
-        text-shadow: 0px 3px 0px black;
+        background-color: #4c3d72;
     }
 
     .text-shadow {
@@ -178,20 +178,6 @@
         text-decoration: none;
         transition-duration: .2s;
     }
-    /* .article-link:hover {
-        filter: brightness(.75);
-    } */
-
-        /* Social Icons */
-
-        .social-icon {
-            transition-duration: .2s;
-            filter: invert(1);
-            width: 50px;
-        }
-        .social-icon:hover {
-            filter: invert(.8);
-        }
 
 
 /* Boxes */
@@ -227,41 +213,22 @@
 
     /* Intro graphic */
 
-    .header-box {
-        height: 60vw;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(54, 42, 30, 0.5)), url('../img/ben_trainor/coffee_shop_resized.jpg');
-        /* background-blend-mode: darken; */
+    #home_coverPhoto {
+        height: 92vh;
+        background-image: url('../img/ben_trainor/coffee_shop_resized.jpg');
+        background-color: #464646;
+        background-blend-mode: overlay;
         background-repeat: no-repeat;
         background-size: cover;
-    }
-    .header-text {
-        position: sticky;
-        top: 40vh;
-        margin-bottom: 10vh;
+        background-position-y: 70%;
+        background-position-x: 55%;
     }
 
-    @media only screen and (max-width: 992px) and (min-width: 769px) {
+    /* Bio on home page */
 
-        .header-box {
-            height: 70vw;
-        }
-        .header-text {
-            top: 35vw;
-        }
+    #home_bio > div {
+        border-radius: 10px;
     }
-
-    @media only screen and (max-width: 768px) {
-
-        .header-box {
-            height: 80vw;
-        }
-        .header-text {
-            position: sticky;
-            top: 40vw;
-            margin-bottom: 10vh;
-        }
-    }
-
 
     /* Contact form */
 
@@ -269,8 +236,8 @@
         color: rgb(220, 0, 0);
     }
 
-    .form input, .form select, .form textarea, .form .btn {
-        border-radius: 10px
+    .form input, .form select, .form textarea, .form .btn, #a_contact, #modal_contact > .modal-content {
+        border-radius: 10px;
     }
 
     #modal_contact {

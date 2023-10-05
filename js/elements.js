@@ -2,6 +2,6 @@
 
 $(function() {
     $("#header").load("../elements/header.html");
-    $("#contact_form").load("../elements/contact_element.html");
+    // $("#contact_form").load("../elements/contact_element.html");
     $("#footer").load("../elements/footer.html");
 });
