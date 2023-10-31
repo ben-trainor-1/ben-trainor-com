@@ -18,6 +18,16 @@
     border: 1px solid green;
 }
 
+/* Rounded corners */
+.rounded {
+    border-radius: 13px !important;
+}
+
+/* Scroll margins */
+.scroll-margin {
+    scroll-margin-top: 140px;
+}
+
 
 /* Text colors and fonts */
 
@@ -64,11 +74,11 @@
         background-color: #836bc0;
     }
 
-    #a_contact {
+    .btn-purple {
         background-color: #685599;
         transition-duration: .2s;
     }
-    #a_contact:hover {
+    .btn-purple:hover {
         background-color: #4c3d72;
     }
 
@@ -236,7 +246,7 @@
         color: rgb(220, 0, 0);
     }
 
-    .form input, .form select, .form textarea, .form .btn, #a_contact, #modal_contact > .modal-content {
+    .form input, .form select, .form textarea, .form .btn, .btn-purple, #modal_contact > .modal-content {
         border-radius: 10px;
     }
 
