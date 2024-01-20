@@ -1,0 +1,39 @@
+
+:root {
+	--gallery-height: 700px;
+}
+
+/* Photography gallery */
+.carousel {
+	padding: 20px 0px;
+}
+.carousel-inner {
+	padding: 0px 10%;
+}
+.carousel-item {
+	max-height: var(--gallery-height);
+	min-height: var(--gallery-height);
+	text-align: center;
+}
+.carousel-item img {
+	max-height: var(--gallery-height);
+    width: auto;
+	margin: 0px;
+	padding: 0px;
+}
+.carousel-item .row {
+	height: var(--gallery-height);
+	flex-wrap: wrap;
+	align-items: center;
+    justify-content: center;
+}
+.carousel-control-next, .carousel-control-prev {
+	width: 10%;
+	filter: invert(1);
+}
+.carousel-indicators {
+	position: relative;
+}
+.carousel-indicators button {
+	filter: invert(1);
+}

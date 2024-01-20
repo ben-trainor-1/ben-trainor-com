@@ -1,0 +1,9 @@
+
+/* Carousel overrides */
+.carousel-control-next, .carousel-control-prev {
+    position: relative !important;
+    width: auto !important;
+}
+.carousel-indicators {
+    margin-bottom: -1rem !important;
+}
