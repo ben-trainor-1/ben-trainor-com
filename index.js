@@ -7,7 +7,7 @@ $(document).ready(() => {
         $("#content").load(href.substring(href.lastIndexOf("\/") + 1));
     });
 
-    $("#content").load("about.html");
+    $("#content").load("credits.html");
     $("#footer").load("social.html");
 
 });
