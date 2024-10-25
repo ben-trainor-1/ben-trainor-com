@@ -7,13 +7,13 @@
     --grey-light: #d8dbe3;
     --blue-dark: #10343d;
     --blue-medium: #1d7779;
-    --blue-light: #a4d9e4;
+    --blue-light: #030404;
     --brown-dark: #603834;
     --brown-medium: #9c584a;
     --brown-light: #d8a47f;
-    --green-dark: #144027;
-    --green-medium: #257946;
-    --green-light: #a0e1ca;
+    --green-dark: #194830;
+    --green-medium: #267b4f;
+    --green-light: #76efb6;
     --white: #fff8f3;
     --font-sans: "DM Sans", "Open Sans", "Helvetica";
     --font-serif: "Source Serif 4", "Times New Roman", "serif";
@@ -26,6 +26,9 @@
 }
 .bg-grey-dark {
     background-color: var(--grey-dark) !important;
+}
+.bg-grey-light {
+    background-color: var(--grey-light) !important;
 }
 .bg-blue-dark {
     background-color: var(--blue-dark) !important;
@@ -62,6 +65,14 @@
 .text-black,
 .text-black * {
     color: var(--black) !important;
+}
+.text-grey-dark,
+.text-grey-dark * {
+    color: var(--grey-dark) !important;
+}
+.text-grey-light,
+.text-grey-light * {
+    color: var(--grey-light) !important;
 }
 .text-blue-dark,
 .text-blue-dark * {
@@ -180,13 +191,18 @@ h6 {
 
 /* widths */
 .w-column {
-    max-width: 500px !important;
+    max-width: 400px !important;
 }
 .w-readable {
     max-width: 800px !important;
 }
 .w-max {
     max-width: 1000px !important;
+}
+@media only screen and (min-width: 768px) {
+    .w-md-auto {
+        width: auto !important;
+    }
 }
 
 /* buttons */
