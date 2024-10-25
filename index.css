@@ -1,57 +1,107 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=DM+Sans:wght@400;500;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,700;1,400;1,700&family=Source+Serif+Pro:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 
 /* variables */
 :root {
-    --black: #16171d;
+    --black: #1f2029;
+    --grey-dark: #25272d;
+    --grey-light: #d8dbe3;
     --blue-dark: #10343d;
-    --blue-medium: #0f7173;
+    --blue-medium: #1d7779;
     --blue-light: #a4d9e4;
     --brown-dark: #603834;
-    --brown-medium: #994636;
+    --brown-medium: #9c584a;
     --brown-light: #d8a47f;
     --green-dark: #144027;
     --green-medium: #257946;
     --green-light: #a0e1ca;
     --white: #fff8f3;
     --font-sans: "DM Sans", "Open Sans", "Helvetica";
-    --font-serif: "Source Serif Pro", "Times New Roman", "serif";
+    --font-serif: "Source Serif 4", "Times New Roman", "serif";
     --btn-radius: 8px;
 }
 
-/* colors */
+/* colors: backgrounds */
 .bg-black {
-    background-color: var(--black);
+    background-color: var(--black) !important;
+}
+.bg-grey-dark {
+    background-color: var(--grey-dark) !important;
 }
 .bg-blue-dark {
-    background-color: var(--blue-dark);
+    background-color: var(--blue-dark) !important;
 }
 .bg-blue-medium {
-    background-color: var(--blue-medium);
+    background-color: var(--blue-medium) !important;
 }
 .bg-blue-light {
-    background-color: var(--blue-light);
+    background-color: var(--blue-light) !important;
 }
 .bg-brown-dark {
-    background-color: var(--brown-dark);
+    background-color: var(--brown-dark) !important;
 }
 .bg-brown-medium {
-    background-color: var(--brown-medium);
+    background-color: var(--brown-medium) !important;
 }
 .bg-brown-light {
-    background-color: var(--brown-light);
+    background-color: var(--brown-light) !important;
 }
 .bg-green-dark {
-    background-color: var(--green-dark);
+    background-color: var(--green-dark) !important;
 }
 .bg-green-medium {
-    background-color: var(--green-medium);
+    background-color: var(--green-medium) !important;
 }
 .bg-green-light {
-    background-color: var(--green-light);
+    background-color: var(--green-light) !important;
 }
 .bg-white {
-    background-color: var(--white);
+    background-color: var(--white) !important;
+}
+
+/* colors: text */
+.text-black,
+.text-black * {
+    color: var(--black) !important;
+}
+.text-blue-dark,
+.text-blue-dark * {
+    color: var(--blue-dark) !important;
+}
+.text-blue-medium,
+.text-blue-medium * {
+    color: var(--blue-medium) !important;
+}
+.text-blue-light,
+.text-blue-light * {
+    color: var(--blue-light) !important;
+}
+.text-brown-dark,
+.text-brown-dark * {
+    color: var(--brown-dark) !important;
+}
+.text-brown-medium,
+.text-brown-medium * {
+    color: var(--brown-medium) !important;
+}
+.text-brown-light,
+.text-brown-light * {
+    color: var(--brown-light) !important;
+}
+.text-green-dark,
+.text-green-dark * {
+    color: var(--green-dark) !important;
+}
+.text-green-medium,
+.text-green-medium * {
+    color: var(--green-medium) !important;
+}
+.text-green-light,
+.text-green-light * {
+    color: var(--green-light) !important;
+}
+.text-white,
+.text-white * {
+    color: var(--white) !important;
 }
 
 /* main */
@@ -61,6 +111,82 @@ body {
 body * {
     font-family: var(--font-sans);
     font-weight: 500;
+}
+
+/* fonts */
+h1 {
+    font-weight: 900 !important;
+}
+h2 {
+    font-weight: 700 !important;
+}
+h3 {
+    font-weight: 600 !important;
+}
+h4, h5 {
+    font-weight: 500 !important;
+}
+h6 {
+    font-weight: 400 !important;
+}
+.font-sans,
+.font-sans * {
+    font-family: var(--font-sans) !important;
+}
+.font-serif,
+.font-serif * {
+    font-family: var(--font-serif) !important;
+}
+.fs-7,
+.fs-7 * {
+    font-size: .9rem;
+}
+.fw-100,
+.fw-100 * {
+    font-weight: 100 !important;
+}
+.fw-200,
+.fw-200 * {
+    font-weight: 200 !important;
+}
+.fw-300,
+.fw-300 * {
+    font-weight: 300 !important;
+}
+.fw-400,
+.fw-400 * {
+    font-weight: 400 !important;
+}
+.fw-500,
+.fw-500 * {
+    font-weight: 500 !important;
+}
+.fw-600,
+.fw-600 * {
+    font-weight: 600 !important;
+}
+.fw-700,
+.fw-700 * {
+    font-weight: 700 !important;
+}
+.fw-800,
+.fw-800 * {
+    font-weight: 800 !important;
+}
+.fw-900,
+.fw-900 * {
+    font-weight: 900 !important;
+}
+
+/* widths */
+.w-column {
+    max-width: 500px !important;
+}
+.w-readable {
+    max-width: 800px !important;
+}
+.w-max {
+    max-width: 1000px !important;
 }
 
 /* buttons */
@@ -74,56 +200,20 @@ button[type="button"] {
 .link {
     text-decoration: none;
     font-weight: 600;
-    color: var(--brown-medium);
+    color: var(--white);
     transition: color .13s;
 }
 .link:hover, .link:active {
     text-decoration: none;
-    color: var(--brown-dark);
-}
-
-/* fonts */
-.font-sans {
-    font-family: var(--font-sans);
-}
-.font-serif {
-    font-family: var(--font-serif);
-}
-h1 {
-    font-weight: 900 !important;
-}
-h2 {
-    font-weight: 800 !important;
-}
-h3 {
-    font-weight: 700 !important;
-}
-h4, h5 {
-    font-weight: 500 !important;
-}
-
-/* layout */
-#header {
-    flex: 0;
-}
-#content {
-    min-height: 0;
-    overflow-y: auto;
-}
-#footer {
-    flex: 0;
+    color: var(--grey-light) !important;
 }
 
 /* menu */
 #header img {
     max-width: 100%;
-    max-height: 4rem !important;
+    max-height: 3.5rem !important;
 }
-
-/* content */
-body {
-    max-height: 100vh;
-    height: 100vh;
-    flex: 1;
-    overflow: auto;
+#header .link:not(:hover),
+#header .link:not(:active) {
+    color: white;
 }
