@@ -212,10 +212,11 @@ button[type="button"] {
     transition: .2s;
 }
 .btn-blue {
-    background-color: var(--blue-medium);
+    color: var(--white) !important;
+    background-color: var(--blue-medium) !important;
 }
 .btn-blue:hover {
-    background-color: var(--blue-dark);
+    background-color: var(--blue-dark) !important;
 }
 
 /* links */
@@ -281,6 +282,7 @@ p:last-child {
     text-shadow: none !important;
     color: var(--white) !important;
     transition: .2s;
+    text-align: start !important;
 }
 
 .audio-playlist:has(.audio-track.playing) .audio-track:not(.playing) * {
@@ -294,6 +296,7 @@ p:last-child {
     margin: 0;
     padding: .5rem;
     flex: 0 0 auto;
+    /* flex-direction: column; */
     width: 100%;
 }
 
@@ -312,8 +315,9 @@ p:last-child {
 }
 
 .audio-tags {
+    /* text-wrap: nowrap; */
     font-size: 1rem;
-    margin-left: auto;
+    /* margin-left: auto; */
     font-style: italic;
     color: var(--grey-light);
 }
