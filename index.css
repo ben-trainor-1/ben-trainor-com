@@ -209,6 +209,13 @@ button[type="button"] {
     border: 1px solid transparent;
     background-color: var(--white);
     border-radius: var(--btn-radius);
+    transition: .2s;
+}
+.btn-blue {
+    background-color: var(--blue-medium);
+}
+.btn-blue:hover {
+    background-color: var(--blue-dark);
 }
 
 /* links */
