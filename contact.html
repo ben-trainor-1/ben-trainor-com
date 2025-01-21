@@ -72,8 +72,35 @@
         <!-- Submit -->
         <div class="row m-0 p-sm-2 pb-sm-3 p-3">
             <div class="col-sm-3 col-1 m-0 p-0"></div>
-            <button type="submit" class="btn-purple col-sm-6 col-10 btn btn-secondary m-0 p-3 fs-5 fw-bold">Submit</button>
+            <button type="button" class="btn-purple col-sm-6 col-10 btn btn-secondary m-0 p-3 fs-5 fw-bold" id="btn_submit">Submit</button>
+            <div class="col-12 m-0 p-3 fw-bold text-center d-none" id="msg_success">Thanks for your submission! I'll be in touch soon.</div>
         </div>
         
     </form>
 </div>
+
+<script type="text/javascript">
+
+    const handleSubmit = event => {
+    event.preventDefault();
+
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+
+    fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString()
+    })
+        .then(() => {
+            console.log("Form successfully submitted");
+            $("#btn_submit").addClass("d-none");
+            $("#msg_success").removeClass("d-none");
+        }) 
+        .catch(error => alert(error));
+    };
+
+    document.querySelector("form").addEventListener("submit", handleSubmit);
+
+    
+</script>
