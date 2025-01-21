@@ -215,12 +215,22 @@ button[type="button"] {
 .link {
     text-decoration: none;
     font-weight: 600;
-    color: var(--white);
     transition: color .13s;
 }
 .link:hover, .link:active {
     text-decoration: none;
+}
+.link-white {
+    color: var(--white);
+}
+.link-white:hover, .link-white:active {
     color: var(--grey-light) !important;
+}
+.link-blue {
+    color: var(--blue-medium) !important;
+}
+.link-blue:hover, .link-blue:active {
+    color: var(--blue-dark) !important;
 }
 
 /* menu */
@@ -299,4 +309,13 @@ p:last-child {
     margin-left: auto;
     font-style: italic;
     color: var(--grey-light);
+}
+
+/* about */
+#bio {
+    min-height: 400px;
+}
+
+#bio > div {
+    height: min-content;
 }

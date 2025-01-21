@@ -36,111 +36,53 @@
         <div id="title" class="col-12 align-self-center position-relative w-max p-5">
             <h1 class="m-0">Ben Trainor</h1>
             <h2 class="fw-200 fst-italic">composer and sound designer</h2>
-            <div id="music_playlist" class="audio-playlist col-lg-8 col-12">
-                <div class="audio-track" data-track-title="Kurath Thor - Welcome To Kurath Thor">
-                    <span class="audio-play material-symbols-rounded">play_circle</span>
-                    <span class="audio-pause material-symbols-rounded">pause_circle</span>
-                    <span class="audio-title">Welcome To Kurath Thor</span>
-                    <span class="audio-tags">epic, sci-fi</span>
-                </div>
-                <div class="audio-track" data-track-title="Paper Watch - Gideon">
-                    <span class="audio-play material-symbols-rounded">play_circle</span>
-                    <span class="audio-pause material-symbols-rounded">pause_circle</span>
-                    <span class="audio-title">Paper Watch - Gideon</span>
-                    <span class="audio-tags">rock, alternative</span>
-                </div>
-                <div class="audio-track" data-track-title="Revenge of the Bardains - Title Theme">
-                    <span class="audio-play material-symbols-rounded">play_circle</span>
-                    <span class="audio-pause material-symbols-rounded">pause_circle</span>
-                    <span class="audio-title">Revenge of the Bardains</span>
-                    <span class="audio-tags">tactical, medieval</span>
-                </div>
-                <div class="audio-track" data-track-title="Here Be Dragons - Extinguished">
-                    <span class="audio-play material-symbols-rounded">play_circle</span>
-                    <span class="audio-pause material-symbols-rounded">pause_circle</span>
-                    <span class="audio-title">Extinguished</span>
-                    <span class="audio-tags">drama, fantasy</span>
-                </div>
-                <div class="audio-track" data-track-title="Revenge of the Bardains - Combat Theme">
-                    <span class="audio-play material-symbols-rounded">play_circle</span>
-                    <span class="audio-pause material-symbols-rounded">pause_circle</span>
-                    <span class="audio-title">Combat</span>
-                    <span class="audio-tags">action, rpg</span>
-                </div>
-                <div class="audio-track" data-track-title="Rope - Ideological Conflict">
-                    <span class="audio-play material-symbols-rounded">play_circle</span>
-                    <span class="audio-pause material-symbols-rounded">pause_circle</span>
-                    <span class="audio-title">Ideological Conflict</span>
-                    <span class="audio-tags">noir, jazz</span>
-                </div>
-                <div class="audio-track" data-track-title="The Claw - The Claw Appears">
-                    <span class="audio-play material-symbols-rounded">play_circle</span>
-                    <span class="audio-pause material-symbols-rounded">pause_circle</span>
-                    <span class="audio-title">The Claw Appears</span>
-                    <span class="audio-tags">horror</span>
-                </div>
-                <div class="audio-track" data-track-title="FROG-MAN V - FROG-MAN V">
-                    <span class="audio-play material-symbols-rounded">play_circle</span>
-                    <span class="audio-pause material-symbols-rounded">pause_circle</span>
-                    <span class="audio-title">FROG-MAN V</span>
-                    <span class="audio-tags">horror, '80s</span>
-                </div>
-                <div class="audio-track" data-track-title="Paper Watch - We Are The Swimmers">
-                    <span class="audio-play material-symbols-rounded">play_circle</span>
-                    <span class="audio-pause material-symbols-rounded">pause_circle</span>
-                    <span class="audio-title">Paper Watch - We Are The Swimmers</span>
-                    <span class="audio-tags">rock, acoustic</span>
-                </div>
-                <div class="audio-track" data-track-title="A Midsummer Night's Dream - Enchantment">
-                    <span class="audio-play material-symbols-rounded">play_circle</span>
-                    <span class="audio-pause material-symbols-rounded">pause_circle</span>
-                    <span class="audio-title">Enchantment</span>
-                    <span class="audio-tags">fantasy, mystery</span>
-                </div>
-            </div>
-            <script>
-                initAudioPlaylist("music_playlist");
-            </script>
+            <div id="playlist"></div>
         </div>
+        <script type="text/javascript">$("#playlist").load("music_playlist.html");</script>
     </div>
     <div class="col-12 d-flex justify-content-center bg-brown-dark p-md-5 p-0">
-        <div id="bio" class="d-flex w-max w-100 p-4">
-            <div class="w-column bg-brown-medium text-white ms-auto me-auto me-md-0 p-4 shadow">
-                <p>
-                    In the second grade, Ben Trainor began learning the guitar, and while learning classic rock riffs and pentatonic scales, 
-                    he started composing his own ideas. Until high school, they only existed in his brain.
-                </p>
-                <p>
-                    Later on he discovered Garage Band and soon Logic Pro, with which he began to record, mix, and master instrumental music 
-                    while experimenting with piano, honing electric tones, arranging strings, and eventually singing.
-                </p>
-                <p>
-                    His music has always taken influences from movies, anime, and video games, late romantic and 20th century composers,
-                    as well as late 2000s emo anthems, creating a unique sound that has become his solo project Paper Watch.
-                </p>
-                <p>
-                    Now, he's an accomplished composer, having written for short films and theater productions, and is expanding his 
-                    repertoire to video games, combining his software engineering background with interactive composition.
-                </p>
+        <div id="bio" class="d-flex w-max w-100 p-4 align-items-center">
+            <div class="w-column bg-brown-medium text-white ms-auto me-auto me-md-0 p-4">
+                <p>Ben Trainor is an established composer and guitarist hailing from Jackson, Tennessee. He loves romantic era composers like Ravel and Rachmaninoff 
+                    as well as '60s jazz, '90s alternative, and the soundtracks of John Powell and Gareth Coker.</p>
+                <p>He has worked on numerous short films and theater productions, writing everything from epic orchestral sci-fi to film noir and has even earned awards for his music.</p>
+                <p>Whether you need an emotive string orchestra or heavy metal action, Ben has a unique ability to adapt to whatever project you throw at him.</p>
             </div>
         </div>
     </div>
     <div class="col-12 d-flex justify-content-center bg-white text-black p-5">
         <div class="w-column fw-400">
+
             <p class="fst-italic mb-1">
                 As an educator and professional theatre practitioner for over thirty years, I recommend Ben Trainor without 
                 reservation. His experience, communication skills, collaborative abilities, reliability, and creativity 
-                will be immeasurable assets to any institution. [His] compositions added immense depth and 
+                will be immeasurable assets. [His] compositions added immense depth and 
                 professionalism to our project.
             </p>
-            <p class="text-end">Kristin Klonowski<br>director, <i>The Count of Monte Cristo</i></p>
-            <p class="fst-italic mb-1">
+            <p class="text-end">Kristin Klonowski<br>theater director and actress</p>
+
+            <p class="fst-italic mb-1 border-top border-1 pt-2">
+                [Ben's] work is professional, he's quick and reliable, he's willing to go the extra mile, 
+                and he's personally just a really easy guy to get along with. I highly recommend him for any of your audio needs.
+            </p>
+            <p class="text-end">Randall Kendrick<br/>documentary filmmaker</p>
+
+            <p class="fst-italic mb-1 border-top border-1 pt-2">
+                Ben is a musical WIZARD and it was such a pleasure to work with him! 
+                I'd compare it to working with the likes of John Williams if I'd ever worked with John Williams.
+                He added a whole new level of intrigue and immersion for our audience.
+                11/10.
+            </p>
+            <p class="text-end">Isabella Gray<br/>theater director and actress</p>
+
+            <p class="fst-italic mb-1 border-top border-1 pt-2">
                 The earthtone soundtrack, complete with vinyl needle-and groove-texture, 
                 creates the perfect accompaniment...on a rainy Manhattan night.
                 Ben Trainor's original score provides just the right touches for the drama 
                 without ever being obtrusive or distracting.
             </p>
-            <p class="text-end">Gavin Richardson<br/>reviewer, <i>Rope</i>/<i>Agnes of God</i></p>
+            <p class="text-end">Gavin Richardson<br/>reviewer and actor</p>
+
         </div>
     </div>
 </div>
