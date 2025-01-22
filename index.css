@@ -346,7 +346,7 @@ p:last-child {
 .gallery-img {
     /* max-width: 400px !important; */
     max-height: 300px !important;
-    width: min-content !important;
+    width: auto !important;
     margin: 0px auto;
     cursor: pointer;
 }
