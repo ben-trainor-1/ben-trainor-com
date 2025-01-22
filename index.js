@@ -9,7 +9,7 @@ $(document).ready(() => {
         $("html").scrollTop(0);
     });
 
-    $("#content").load("photo.html");
+    $("#content").load("about.html");
     $("#footer").load("social.html");
 
 });
