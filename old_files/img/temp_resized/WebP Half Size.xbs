@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><XnView_script version="1.0" name="WebP Half Size">
-    <Resize mode="0" width="50" height="50" unit="1" ratio="true" orientation="false" enlarge="0" resample="7" gamma_correct="false"/>
-    <Output folder="/Users/benjammintrain/Desktop/Benz Stuff/Programmin/Portfolio/portfolio/img/temp_resized" filename="{Filename}_resized" case="0" startIndex="1" format="WEBP">
-        <Options overwrite="0" orgDate="false" keepMeta="true" keepICC="false" keepFolder="false" keepParentFolder="false" keepExtension="false" delOrg="false" multipage="false" allPages="false" openExplorer="false" openBrowser="false" clearItems="false"/>
-        <WEBP method="0" quality="50" filesize="128" compress="4" strength="60" sharpness="0" preset="0"/>
-    </Output>
-</XnView_script>
