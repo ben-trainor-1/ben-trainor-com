@@ -1,0 +1,67 @@
+<div class="row m-0 p-0 justify-content-center text-black bg-grey-dark text-white">
+    <div class="col-12 d-flex align-items-center justify-content-center p-md-5 p-3">
+        <h1 class="m-0">Photography</h1>
+    </div>
+    <div class="col-12 row px-md-5 px-3 py-0">
+        <div class="w-md-auto col-12 d-flex flex-column m-0 pe-md-5 p-4 bg-blue-dark text-md-start text-center">
+            <h2 class="col-12 m-0">Galleries</h2>
+            <div class="col-md-12 w-auto m-0 mt-2 p-0"><a href="#" data-gallery-id="canada" class="gallery-link link link-light">canada 2024/07/08</a></div>
+            <div class="col-md-12 w-auto m-0 mt-2 p-0"><a href="#" data-gallery-id="smokies" class="gallery-link link link-light">smokies</a></div>
+        </div>
+        <div class="gallery col row g-4 m-0 p-0 pt-0 px-3 pb-4 bg-light active" id="canada">
+            <div class="gallery-title">canada 2024/07/08</div>
+            <div class="gallery-description">shot on canonet ql19, fuji 400, developed and scanned by Boutique Film Lab in Nashville, TN</div>
+            <img class="gallery-img" src="img/gallery/canada/1.webp">
+            <img class="gallery-img" src="img/gallery/canada/2.webp">
+            <img class="gallery-img" src="img/gallery/canada/3.webp">
+            <img class="gallery-img" src="img/gallery/canada/4.webp">
+            <img class="gallery-img" src="img/gallery/canada/5.webp">
+            <img class="gallery-img" src="img/gallery/canada/6.webp">
+            <img class="gallery-img" src="img/gallery/canada/7.webp">
+            <img class="gallery-img" src="img/gallery/canada/8.webp">
+            <img class="gallery-img" src="img/gallery/canada/9.webp">
+            <img class="gallery-img" src="img/gallery/canada/10.webp">
+            <img class="gallery-img" src="img/gallery/canada/11.webp">
+            <img class="gallery-img" src="img/gallery/canada/12.webp">
+            <img class="gallery-img" src="img/gallery/canada/13.webp">
+            <img class="gallery-img" src="img/gallery/canada/14.webp">
+            <img class="gallery-img" src="img/gallery/canada/15.webp">
+        </div>
+        <div class="gallery col row g-4 m-0 p-0 pt-0 px-3 pb-4 bg-light" id="smokies">
+            <div class="gallery-title">smokies</div>
+            <div class="gallery-description">shot on canon rebel t6</div>
+            <img class="gallery-img" src="img/gallery/smokies/1.webp">
+            <img class="gallery-img" src="img/gallery/smokies/2.webp">
+            <img class="gallery-img" src="img/gallery/smokies/3.webp">
+            <img class="gallery-img" src="img/gallery/smokies/4.webp">
+            <img class="gallery-img" src="img/gallery/smokies/5.webp">
+            <img class="gallery-img" src="img/gallery/smokies/6.webp">
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(".gallery-img").on("click", (event) => {
+        
+        let div = document.createElement("div");
+        $(div).addClass("row m-0 p-md-5 p-3 align-items-center justify-content-center");
+
+        let img = document.createElement("img");
+        $(img).attr("src", $(event.target).attr("src"));
+        $(img).addClass("gallery-img-full");
+        
+        $(div).append(img);
+        $("html").append(div);
+
+        $(".gallery-img-full, div:has(> .gallery-img-full)").on("click", () => {
+            $("div:has(> .gallery-img-full)").remove();
+        });
+
+    });
+
+    $(".gallery-link").on("click", (event) => {
+        let id = $(event.target).data("gallery-id");
+        $(".gallery.active").removeClass("active");
+        $("#" + id).addClass("active");
+    });
+</script>

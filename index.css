@@ -270,25 +270,22 @@ p:last-child {
 
 /* audio player(s) */
 .audio-playlist {
-    max-height: 300px;
+    max-height: 500px;
     overflow: auto;
     display: flex;
     flex-direction: column;
     padding: .5rem;
     background-color: var(--grey-dark);
 }
-
 .audio-playlist * {
     text-shadow: none !important;
     color: var(--white) !important;
     transition: .2s;
     text-align: start !important;
 }
-
 .audio-playlist:has(.audio-track.playing) .audio-track:not(.playing) * {
     color: var(--grey-light) !important;
 }
-
 .audio-track {
     display: flex !important;
     align-items: center !important;
@@ -299,34 +296,75 @@ p:last-child {
     /* flex-direction: column; */
     width: 100%;
 }
-
 .audio-track:hover {
     background-color: var(--black);
 }
-
 .audio-track.playing .audio-play,
 .audio-track:not(.playing) .audio-pause {
     display: none;
 }
-
 .audio-title {
     font-size: 1.25rem;
     margin-left: .5rem;
 }
-
 .audio-tags {
     /* text-wrap: nowrap; */
     font-size: 1rem;
     /* margin-left: auto; */
     font-style: italic;
-    color: var(--grey-light);
+    color: var(--brown-light) !important;
 }
 
 /* about */
 #bio {
     min-height: 400px;
 }
-
 #bio > div {
     height: min-content;
+}
+
+/* photo gallery */
+.gallery:not(.active) {
+    display: none;
+}
+.gallery-title, .gallery-description {
+    color: var(--black) !important;
+    flex: 0 0 auto;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.gallery-title {
+    font-weight: 800;
+    font-size: 1.5rem;
+    padding: 1rem 1rem 0 1rem !important;
+}
+.gallery-description {
+    padding: 0 1rem 0 1rem !important;
+    font-style: italic;
+}
+.gallery-img {
+    /* max-width: 400px !important; */
+    max-height: 300px !important;
+    width: min-content !important;
+    margin: 0px auto;
+    cursor: pointer;
+}
+body:has(+ div > .gallery-img-full) {
+    filter: brightness(.5) blur(1px);
+    pointer-events: none;
+}
+div:has(> .gallery-img-full) {
+    position: fixed;
+    top: 0;
+    height: 100vh !important;
+    width: 100vw !important;
+}
+.gallery-img-full {
+    cursor: pointer;
+    width: auto !important;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
 }
