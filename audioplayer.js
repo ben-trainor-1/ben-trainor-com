@@ -7,7 +7,8 @@ function getHowl(folder_path, track_title, volume = default_volume, autoplay = f
     return new Howl({
         src: [folder_path + "/" + track_title + ".mp3", folder_path + "/" + track_title + ".ogg"],
         volume: volume,
-        autoplay: autoplay
+        autoplay: autoplay,
+        html5: true
     });
 }
 
