@@ -5,6 +5,7 @@
     --black: #1f2029;
     --grey-dark: #25272d;
     --grey-light: #d8dbe3;
+    --grey-light-trans: #d8dbe3eb;
     --blue-dark: #10343d;
     --blue-medium: #1d7779;
     --blue-light: #a8f1f1;
@@ -15,6 +16,7 @@
     --green-medium: #267b4f;
     --green-light: #76efb6;
     --white: #fff8f3;
+    --white-trans: #fff8f3eb;
     --font-sans: "DM Sans", "Open Sans", "Helvetica";
     --font-serif: "Source Serif 4", "Times New Roman", "serif";
     --btn-radius: 8px;
@@ -29,6 +31,9 @@
 }
 .bg-grey-light {
     background-color: var(--grey-light) !important;
+}
+.bg-grey-light-trans {
+    background-color: var(--grey-light-trans) !important;
 }
 .bg-blue-dark {
     background-color: var(--blue-dark) !important;
@@ -59,6 +64,9 @@
 }
 .bg-white {
     background-color: var(--white) !important;
+}
+.bg-white-trans {
+    background-color: var(--white-trans) !important;
 }
 
 /* colors: text */
@@ -237,6 +245,15 @@ button[type="button"] {
 #header img {
     max-width: 100%;
     max-height: 3.5rem !important;
+}
+@media only screen and (max-width: 768px) {
+	#header img {
+		max-height: 2rem !important;
+		margin-top: 3px;
+	}
+	#header {
+		padding: .4rem !important;
+	}
 }
 #header .link:not(:hover),
 #header .link:not(:active) {
