@@ -263,6 +263,7 @@ p:last-child {
 /* audio player(s) */
 .audio-playlist {
     max-height: 500px;
+    max-width: 700px;
     overflow: auto;
     display: flex;
     flex-direction: column;
