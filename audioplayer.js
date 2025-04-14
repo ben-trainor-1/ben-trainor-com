@@ -7,7 +7,8 @@ function getHowl(folder_path, track_title, volume = default_volume, autoplay = f
     return new Howl({
         src: [folder_path + "/" + track_title + ".mp3", folder_path + "/" + track_title + ".ogg"],
         volume: volume,
-        autoplay: autoplay
+        autoplay: autoplay,
+        html5: true
     });
 }
 
@@ -27,18 +28,21 @@ function playTrack(playlist_id, track_element) {
     let new_track_title = $(track_element).data("track-title");
     if (current_track_title != new_track_title) {
 
-        fadeCurrentSounds();
+        // fadeCurrentSounds();
+        killCurrentSounds();
         let new_sound = getHowl("audio/music", new_track_title);
+        new_sound.volume(default_volume);
+        new_sound.play();
 
         // only fade in new track if there's one playing already
-        if (current_track_title != undefined) {
-            new_sound.volume(0);
-            new_sound.play();
-            new_sound.fade(0, default_volume, fade_in_length);
-        } else {
-            new_sound.volume(default_volume);
-            new_sound.play();
-        }
+        // if (current_track_title != undefined) {
+        //     new_sound.volume(0);
+        //     new_sound.play();
+        //     new_sound.fade(0, default_volume, fade_in_length);
+        // } else {
+        //     new_sound.volume(default_volume);
+        //     new_sound.play();
+        // }
         $(track_element).addClass("playing");
 
     } else {
