@@ -1,7 +1,7 @@
 <style>
     #title {
         min-height: 300px;
-        background-image: url("img/bw_peace_sign.JPG");
+        background-image: url("img/gallery_crop.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -17,7 +17,7 @@
     @media only screen and (min-width: 768px) {
         #title {
             min-height: 600px;
-            background-position: right center;
+            background-position: left center;
             background-repeat: no-repeat;
             background-size: contain;
             text-align: start;
@@ -33,10 +33,10 @@
 
 <div class="row m-0 p-0 justify-content-center">
     <div class="col-12 d-flex align-items-center justify-content-center text-black bg-white p-md-5 p-0">
-        <div id="title" class="col-12 align-self-center position-relative w-max p-md-5 p-4">
+        <div id="title" class="col-12 align-self-center position-relative w-max p-md-5 p-4 text-md-end text-center">
             <h1 class="m-0">Ben Trainor</h1>
             <h2 class="fw-200 fst-italic">composer and sound designer</h2>
-            <div id="playlist"></div>
+            <div id="playlist" class="d-flex justify-content-end"></div>
         </div>
         <script type="text/javascript">$("#playlist").load("music_playlist.html");</script>
     </div>
